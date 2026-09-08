@@ -24,9 +24,6 @@
             "type": "disabled"
           }
         }
-      },
-      "model": {
-        "authType": "openai"
       }
     }
   },
@@ -36,7 +33,5 @@
     "TJGenerators": {
       "httpUrl": "https://ai-generator.tuanjie.cn/mcp"
     }
-  },
-  "selectedAuthType": "openai",
-  "model": "gpt-5.6-sol"
+  }
 }

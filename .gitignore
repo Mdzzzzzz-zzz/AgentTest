@@ -1,2 +1,4 @@
 Client/Library/
 Client/Temp/
+.codely-cli/
+Client/Logs/

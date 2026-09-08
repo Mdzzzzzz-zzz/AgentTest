@@ -1,0 +1,14 @@
+{
+  "name": "RuneDice.Tests.EditMode",
+  "references": ["RuneDice.Game"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

@@ -1,14 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuneDice.Tests.EditMode", "RuneDice.Tests.EditMode.csproj", "{59A1DFF4-5931-8291-3FB8-0F46B70D6872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuneDice.Game", "RuneDice.Game.csproj", "{6B839D83-A683-7ED8-924C-7C3E5421A3D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuneDice.Tests.PlayMode", "RuneDice.Tests.PlayMode.csproj", "{C481EE82-E807-7853-E63C-CEDCA9D99079}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{59A1DFF4-5931-8291-3FB8-0F46B70D6872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A1DFF4-5931-8291-3FB8-0F46B70D6872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A1DFF4-5931-8291-3FB8-0F46B70D6872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A1DFF4-5931-8291-3FB8-0F46B70D6872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B839D83-A683-7ED8-924C-7C3E5421A3D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B839D83-A683-7ED8-924C-7C3E5421A3D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B839D83-A683-7ED8-924C-7C3E5421A3D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B839D83-A683-7ED8-924C-7C3E5421A3D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C481EE82-E807-7853-E63C-CEDCA9D99079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C481EE82-E807-7853-E63C-CEDCA9D99079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C481EE82-E807-7853-E63C-CEDCA9D99079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C481EE82-E807-7853-E63C-CEDCA9D99079}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
