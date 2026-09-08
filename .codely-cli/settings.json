@@ -1,0 +1,42 @@
+{
+  "contentGenerator": {
+    "overrides": {
+      "multimodalModel": {
+        "authType": "openai",
+        "chat_template_kwargs": {
+          "enable_thinking": false,
+          "enable_reasoning": false
+        },
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "flashModel": {
+        "authType": "openai",
+        "chat_template_kwargs": {
+          "enable_thinking": false,
+          "enable_reasoning": false
+        },
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "model": {
+        "authType": "openai"
+      }
+    }
+  },
+  "multimodalModel": "gpt-5.6-sol",
+  "flashModel": "gpt-5.6-luna",
+  "mcpServers": {
+    "TJGenerators": {
+      "httpUrl": "https://ai-generator.tuanjie.cn/mcp"
+    }
+  },
+  "selectedAuthType": "openai",
+  "model": "gpt-5.6-sol"
+}

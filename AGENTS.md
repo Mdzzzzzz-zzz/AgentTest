@@ -1,4 +1,4 @@
-# BlockJam project agent rules
+# AgentTest project agent rules
 
 ## Context isolation
 

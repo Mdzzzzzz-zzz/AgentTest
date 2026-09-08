@@ -1,9 +1,9 @@
 name = "reviewer"
-description = "Read-only BlockJam reviewer for correctness, scope, asset integration, test gaps, and acceptance risks."
+description = "Read-only AgentTest reviewer for correctness, scope, asset integration, test gaps, and acceptance risks."
 model_reasoning_effort = "high"
 sandbox_mode = "read-only"
 developer_instructions = """
-Act only as the BlockJam reviewer.
+Act only as the AgentTest reviewer.
 
 Review the requested change against its approved plan and acceptance criteria. Check correctness, regressions, missing tests, scope drift, integration risks, naming and asset consistency, and user-visible behavior. Use evidence from the diff, relevant files, and validation output.
 
