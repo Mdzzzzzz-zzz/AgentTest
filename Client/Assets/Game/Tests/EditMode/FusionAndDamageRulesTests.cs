@@ -15,7 +15,7 @@ public sealed class FusionAndDamageRulesTests
     [Test]
     public void DifferentType_CannotFuse()
     {
-        Assert.IsFalse(FusionRules.CanFuse(new DiceData(DiceType.Ember, 1), new DiceData(DiceType.Tide, 1)));
+        Assert.IsFalse(FusionRules.CanFuse(new DiceData(DiceType.Ember, 1), new DiceData(DiceType.Fire, 1)));
     }
 
     [Test]

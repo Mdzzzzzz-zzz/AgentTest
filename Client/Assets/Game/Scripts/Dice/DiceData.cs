@@ -1,6 +1,6 @@
 namespace RuneDice.Game
 {
-    public enum DiceType { Ember, Tide, Stone }
+    public enum DiceType { Basic, Fire, Lightning, Ember = Basic }
 
     public readonly struct DiceData
     {

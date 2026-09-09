@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Failed(Child)" total="7" passed="5" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.3258371">
+  <test-suite type="TestSuite" id="1000" name="Rune Dice" fullname="Rune Dice" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.325837" total="7" passed="5" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1010" name="RuneDice.Tests.PlayMode.dll" fullname="D:/NewOne/Client/Library/ScriptAssemblies/RuneDice.Tests.PlayMode.dll" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.321491" total="7" passed="5" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="42936" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1001" name="Stage1SmokeTests" fullname="Stage1SmokeTests" classname="Stage1SmokeTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.201413" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1004" name="FusionDamageCanWinAndBlocksLaunchUntilReset" fullname="Stage1SmokeTests.FusionDamageCanWinAndBlocksLaunchUntilReset" methodname="FusionDamageCanWinAndBlocksLaunchUntilReset" classname="Stage1SmokeTests" runstate="Runnable" seed="1877424213" result="Failed" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.147047" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <failure>
+            <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+            <stack-trace><![CDATA[at Stage1SmokeTests+<FusionDamageCanWinAndBlocksLaunchUntilReset>d__2.MoveNext () [0x001c0] in D:\NewOne\Client\Assets\Game\Tests\PlayMode\Stage1SmokeTests.cs:73
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1002" name="SceneLoadsAndCanResetTwentyTimesWithoutAccumulation" fullname="Stage1SmokeTests.SceneLoadsAndCanResetTwentyTimesWithoutAccumulation" methodname="SceneLoadsAndCanResetTwentyTimesWithoutAccumulation" classname="Stage1SmokeTests" runstate="Runnable" seed="855870319" result="Passed" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.027838" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1003" name="TwoMatchingDiceFuseOnceAndIncreaseLevel" fullname="Stage1SmokeTests.TwoMatchingDiceFuseOnceAndIncreaseLevel" methodname="TwoMatchingDiceFuseOnceAndIncreaseLevel" classname="Stage1SmokeTests" runstate="Runnable" seed="1400786064" result="Passed" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.017563" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1005" name="Stage2BattleFlowTests" fullname="Stage2BattleFlowTests" classname="Stage2BattleFlowTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.119058" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1006" name="FusionAdvancesThroughEnemyActionAndDamagesPlayer" fullname="Stage2BattleFlowTests.FusionAdvancesThroughEnemyActionAndDamagesPlayer" methodname="FusionAdvancesThroughEnemyActionAndDamagesPlayer" classname="Stage2BattleFlowTests" runstate="Runnable" seed="884722670" result="Passed" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.017691" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1009" name="ResetClearsRewardsRestoresBattleAndDoesNotAccumulateDice" fullname="Stage2BattleFlowTests.ResetClearsRewardsRestoresBattleAndDoesNotAccumulateDice" methodname="ResetClearsRewardsRestoresBattleAndDoesNotAccumulateDice" classname="Stage2BattleFlowTests" runstate="Runnable" seed="1561924654" result="Failed" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.023325" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <failure>
+            <message><![CDATA[  Expected: greater than 3
+  But was:  3
+]]></message>
+            <stack-trace><![CDATA[at Stage2BattleFlowTests+<ResetClearsRewardsRestoresBattleAndDoesNotAccumulateDice>d__3.MoveNext () [0x0006f] in D:\NewOne\Client\Assets\Game\Tests\PlayMode\Stage2BattleFlowTests.cs:88
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1007" name="RewardPanelButtonsApplyAllThreeChoices" fullname="Stage2BattleFlowTests.RewardPanelButtonsApplyAllThreeChoices" methodname="RewardPanelButtonsApplyAllThreeChoices" classname="Stage2BattleFlowTests" runstate="Runnable" seed="1550717242" result="Passed" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.056804" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1008" name="ThreeDiceTypesHaveDistinctMarkersColorsAndFusionEffects" fullname="Stage2BattleFlowTests.ThreeDiceTypesHaveDistinctMarkersColorsAndFusionEffects" methodname="ThreeDiceTypesHaveDistinctMarkersColorsAndFusionEffects" classname="Stage2BattleFlowTests" runstate="Runnable" seed="1539835775" result="Passed" start-time="2026-09-08 11:11:04Z" end-time="2026-09-08 11:11:04Z" duration="0.020396" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Game\Scripts\Combat\DamageRules.cs" />
     <Compile Include="Assets\Game\Scripts\Core\GameController.cs" />
+    <Compile Include="Assets\Game\Scripts\Core\BattleRules.cs" />
     <Compile Include="Assets\Game\Scripts\Fusion\FusionFeedback.cs" />
     <Compile Include="Assets\Game\Scripts\Dice\DiceData.cs" />
     <Compile Include="Assets\Game\Scripts\Dice\DiceEntity.cs" />
