@@ -1,6 +1,0 @@
-D:\NewOne\Client\Temp\bin\Debug\RuneDice.Game.dll
-D:\NewOne\Client\Temp\bin\Debug\RuneDice.Game.pdb
-D:\NewOne\Client\obj\Debug\RuneDice.Game.csproj.AssemblyReference.cache
-D:\NewOne\Client\obj\Debug\RuneDice.Game.csproj.CoreCompileInputs.cache
-D:\NewOne\Client\obj\Debug\RuneDice.Game.dll
-D:\NewOne\Client\obj\Debug\RuneDice.Game.pdb
