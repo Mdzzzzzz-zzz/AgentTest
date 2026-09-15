@@ -21,15 +21,23 @@ namespace DiceDemo.M1
         private BattlePhaseMachine _phase;
         private Sprite _playerSprite, _goblinSprite, _archerSprite;
         private Texture2D _panelTexture, _buttonTexture, _selectedButtonTexture;
+        private Texture2D _aimRingTexture, _aimButtonTexture;
         private GUIStyle _panelStyle, _titleStyle, _labelStyle, _smallStyle, _buttonStyle, _selectedButtonStyle;
         private Coroutine _roundRoutine;
         private AcceptanceScenario _scenario;
         private DiceKind _nextKind = DiceKind.Attack;
         private int _nextLevel = 1, _round, _debugGold;
         private bool _isAiming, _debugOpen, _physicsTimedOut;
-        private Vector3 _aimWorld;
+        private Vector2 _aimCenterGui, _aimKnobGui;
+        private Vector3 _aimStartBoardPoint, _aimDirection = Vector3.forward;
+        private float _aimStrength;
         private float _physicsStartedAt, _allSleepingSince = -1f, _presentationSpeed = 1f;
         private string _resultMessage = string.Empty;
+
+        private const float AimRadius = 88f;
+        private const float AimKnobRadius = 26f;
+        private const float AimStartThreshold = 8f;
+        private const int AimTrajectorySegments = 24;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Boot() { if (SceneManager.GetActiveScene().name == SceneName && FindObjectOfType<BattleFlow>() == null) new GameObject("战斗流程控制器").AddComponent<BattleFlow>(); }
@@ -56,27 +64,74 @@ namespace DiceDemo.M1
         {
             if (Input.GetKeyDown(KeyCode.F10)) _debugOpen = !_debugOpen;
             if (Input.GetKeyDown(KeyCode.Escape)) { if (_debugOpen) _debugOpen = false; else Application.Quit(); }
-            if (_phase == null || _phase.Current != BattlePhase.PlayerAim || IsPointerOverGui() || _camera == null) return;
-            Vector3 world; if (!TryGetBoardPoint(Input.mousePosition, out world)) return;
-            if (Input.GetMouseButtonDown(0)) { _isAiming = true; _aimWorld = world; }
-            if (_isAiming && Input.GetMouseButton(0)) _aimWorld = world;
-            if (_isAiming && Input.GetMouseButtonUp(0)) { _isAiming = false; LaunchToward(world); }
+            if (_phase == null || _phase.Current != BattlePhase.PlayerAim || _camera == null) return;
+
+            UpdateAimCenter();
+
+            Vector2 mouseGui = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+            if (!_isAiming)
+            {
+                if (Input.GetMouseButtonDown(0) && !IsPointerOverGui() &&
+                    (mouseGui - _aimCenterGui).sqrMagnitude <= AimKnobRadius * AimKnobRadius)
+                {
+                    _isAiming = true;
+                    _aimKnobGui = _aimCenterGui;
+                    if (!TryGetBoardPoint(new Vector3(_aimCenterGui.x, Screen.height - _aimCenterGui.y, 0f), out _aimStartBoardPoint))
+                        _aimStartBoardPoint = new Vector3(BattleBalance.LaunchX, BattleBalance.BoardSurfaceY, BattleBalance.LaunchZ);
+                    UpdateAimFromGui(mouseGui);
+                }
+                return;
+            }
+
+            if (Input.GetMouseButton(0)) UpdateAimFromGui(mouseGui);
+            if (Input.GetMouseButtonUp(0))
+            {
+                UpdateAimFromGui(mouseGui);
+                _isAiming = false;
+                if (_aimStrength >= AimStartThreshold / AimRadius)
+                    LaunchToward(_aimDirection, _aimStrength);
+                _aimKnobGui = _aimCenterGui;
+            }
         }
+
+        private void UpdateAimFromGui(Vector2 mouseGui)
+        {
+            Vector2 offset = mouseGui - _aimCenterGui;
+            if (offset.sqrMagnitude > AimRadius * AimRadius) offset = offset.normalized * AimRadius;
+            _aimKnobGui = _aimCenterGui + offset;
+            _aimStrength = Mathf.Clamp01(offset.magnitude / AimRadius);
+
+            Vector3 boardPoint;
+            if (!TryGetBoardPoint(new Vector3(_aimKnobGui.x, Screen.height - _aimKnobGui.y, 0f), out boardPoint)) return;
+            Vector3 dragDelta = boardPoint - _aimStartBoardPoint;
+            dragDelta.y = 0f;
+            if (dragDelta.sqrMagnitude > 0.0001f) _aimDirection = -dragDelta.normalized;
+        }
+
         private bool TryGetBoardPoint(Vector3 screen, out Vector3 point)
         {
-            Ray ray = _camera.ScreenPointToRay(screen); Plane plane = new Plane(Vector3.up, new Vector3(0f, 0.8f, 0f)); float enter;
-            if (!plane.Raycast(ray, out enter)) { point = Vector3.zero; return false; } point = ray.GetPoint(enter); point.x = Mathf.Clamp(point.x, BattleBalance.BoardLeft, BattleBalance.BoardRight); point.z = Mathf.Clamp(point.z, 1f, 8f); return true;
+            Ray ray = _camera.ScreenPointToRay(screen); Plane plane = new Plane(Vector3.up, new Vector3(0f, BattleBalance.BoardSurfaceY, 0f)); float enter;
+            if (!plane.Raycast(ray, out enter)) { point = Vector3.zero; return false; } point = ray.GetPoint(enter); point.x = Mathf.Clamp(point.x, BattleBalance.BoardLeft, BattleBalance.BoardRight); point.z = Mathf.Clamp(point.z, BattleBalance.BoardBottom, BattleBalance.BoardTop); return true;
         }
         private bool IsPointerOverGui() { return Input.mousePosition.y > Screen.height - 138f || Input.mousePosition.x > Screen.width * 0.78f || (_debugOpen && Input.mousePosition.x > Screen.width * 0.57f); }
 
-        private void LaunchToward(Vector3 target)
+        private void LaunchToward(Vector3 direction, float strength)
         {
+            Vector3 origin = new Vector3(BattleBalance.LaunchX, BattleBalance.LaunchY, BattleBalance.LaunchZ);
+            Vector3 horizontalDirection = new Vector3(direction.x, 0f, direction.z);
+            if (horizontalDirection.sqrMagnitude < 0.0001f) horizontalDirection = Vector3.forward;
+            horizontalDirection.Normalize();
+            strength = Mathf.Clamp01(strength);
+            Vector3 target; Vector3 velocity; float flightTime;
+            if (!AimTrajectoryMath.TryCalculateLaunch(origin, horizontalDirection, strength, Physics.gravity, out target, out velocity, out flightTime)) return;
             if (!_phase.TryTransition(BattlePhase.PlayerLaunch)) return;
-            Vector3 origin = new Vector3(BattleBalance.LaunchX, BattleBalance.LaunchY, 1.4f), delta = target - origin; if (delta.sqrMagnitude < 0.2f) delta = Vector3.forward;
             BattleDie die = SpawnDie(_nextKind, _nextLevel, origin, true); if (die == null) return;
-            die.Launch(delta.normalized * Mathf.Clamp(delta.magnitude * 2.2f, 7f, 16f), new Vector3(RandomSigned(7f), RandomSigned(7f), RandomSigned(7f)));
-            AddLog("已投掷：" + KindShort(_nextKind) + "，第" + _nextLevel + "级"); RollNextDie(); _phase.TryTransition(BattlePhase.PhysicsResolution); _physicsStartedAt = Time.time; _allSleepingSince = -1f; _physicsTimedOut = false; _roundRoutine = StartCoroutine(ResolveRound());
+            // BattleDie uses ForceMode.Impulse; convert the desired velocity to impulse
+            // so the launch distance is independent of the template's mass.
+            die.Launch(velocity * die.Body.mass, new Vector3(RandomSigned(7f), RandomSigned(7f), RandomSigned(7f)));
+            AddLog("已投掷：" + KindShort(_nextKind) + "，第" + _nextLevel + "级，力度" + Mathf.RoundToInt(strength * 100f) + "%"); RollNextDie(); _phase.TryTransition(BattlePhase.PhysicsResolution); _physicsStartedAt = Time.time; _allSleepingSince = -1f; _physicsTimedOut = false; _roundRoutine = StartCoroutine(ResolveRound());
         }
+
         private float RandomSigned(float max) { return (float)(_random.NextDouble() * max * 2f - max); }
         private IEnumerator ResolveRound()
         {
@@ -98,7 +153,7 @@ namespace DiceDemo.M1
         {
             for (int i = 0; i < _enemies.Count; i++) { EnemyModel enemy = _enemies[i]; if (!enemy.Unit.IsAlive) continue; if (enemy.IntentKind == IntentKind.Attack) { DamageResult result = _player.ApplyDamage(enemy.IntentValue); AddLog(enemy.Unit.Name + "攻击" + enemy.IntentValue + "，护盾-" + result.ShieldLost + "，生命-" + result.HealthLost); } else AddLog(enemy.Unit.Name + "等待"); enemy.AdvanceIntent(); if (TryFinishBattle()) yield break; yield return PresentationWait(0.45f); }
         }
-        private void BeginRound() { _round++; _player.ClearShield(); AddLog("第" + _round + "回合：拖动瞄准线并松开投掷"); StartCoroutine(BeginAimAfterDelay()); }
+        private void BeginRound() { _round++; _player.ClearShield(); AddLog("第" + _round + "回合：拖动圆盘中心按钮并松开投掷"); StartCoroutine(BeginAimAfterDelay()); }
         private IEnumerator BeginAimAfterDelay() { yield return PresentationWait(0.2f); if (_phase.Current == BattlePhase.RoundPreparation) _phase.TryTransition(BattlePhase.PlayerAim); }
         private IEnumerator PresentationWait(float seconds) { float until = Time.unscaledTime + seconds / Mathf.Max(1f, _presentationSpeed); while (Time.unscaledTime < until) yield return null; }
         private bool AllDiceSleeping() { foreach (BattleDie die in FindObjectsOfType<BattleDie>()) if (die.Body != null && (die.Body.velocity.sqrMagnitude > 0.01f || die.Body.angularVelocity.sqrMagnitude > 0.03f)) return false; return true; }
@@ -119,7 +174,7 @@ namespace DiceDemo.M1
         private void LoadScenario(AcceptanceScenario scenario)
         {
             if (_roundRoutine != null) StopCoroutine(_roundRoutine); StopAllCoroutines(); foreach (BattleDie die in FindObjectsOfType<BattleDie>()) Destroy(die.gameObject); foreach (SpriteRenderer view in _enemyViews) if (view != null) Destroy(view.gameObject); _enemyViews.Clear(); _enemies.Clear(); _effectQueue.Clear(); _mergeService.Reset(); _battleLog.Clear();
-            _scenario = scenario; _random = new System.Random(BattleBalance.Seed + (int)scenario * 97); _player = new CombatantModel("游侠", BattleBalance.PlayerMaxHealth); _phase = new BattlePhaseMachine(BattlePhase.RoundPreparation); _round = 0; _nextKind = DiceKind.Attack; _nextLevel = 1; _presentationSpeed = 1f; _resultMessage = string.Empty; _physicsTimedOut = false; _debugGold = 0;
+            _scenario = scenario; _random = new System.Random(BattleBalance.Seed + (int)scenario * 97); _player = new CombatantModel("游侠", BattleBalance.PlayerMaxHealth); _phase = new BattlePhaseMachine(BattlePhase.RoundPreparation); _round = 0; _nextKind = DiceKind.Attack; _nextLevel = 1; _presentationSpeed = 1f; _resultMessage = string.Empty; _physicsTimedOut = false; _debugGold = 0; _isAiming = false; _aimStrength = 0f; _aimDirection = Vector3.forward;
             _enemies.Add(new EnemyModel(EnemyKind.Goblin, "哥布林", 30, new[] { 8, 10, 0 })); _enemies.Add(new EnemyModel(EnemyKind.Archer, "弓手", 22, new[] { 5, 7, 7 }));
             switch (scenario) { case AcceptanceScenario.Attack: SpawnResting(DiceKind.Attack, 1, new Vector3(-3.1f, 1.5f, 2f)); SpawnResting(DiceKind.Attack, 1, new Vector3(-0.8f, 1.5f, 2f)); break; case AcceptanceScenario.HealCap: _player.Reset("游侠", 60, 55, 0); _nextKind = DiceKind.Heal; _nextLevel = 2; SpawnResting(DiceKind.Heal, 2, new Vector3(-3.1f, 1.5f, 2f)); SpawnResting(DiceKind.Heal, 2, new Vector3(-0.8f, 1.5f, 2f)); break; case AcceptanceScenario.ShieldAbsorb: _nextKind = DiceKind.Shield; _nextLevel = 2; _enemies.RemoveAt(1); _enemies[0].ForceIntent(IntentKind.Attack, 8); SpawnResting(DiceKind.Shield, 2, new Vector3(-3.1f, 1.5f, 2f)); SpawnResting(DiceKind.Shield, 2, new Vector3(-0.8f, 1.5f, 2f)); break; case AcceptanceScenario.Chain: _enemies[0].Unit.Reset("哥布林", 80, 80, 0); _enemies[1].Unit.Reset("弓手", 60, 60, 0); SpawnMoving(DiceKind.Attack, 1, new Vector3(-3.8f, 1.5f, 3f), Vector3.right * 2f); SpawnMoving(DiceKind.Attack, 1, new Vector3(-2.4f, 1.5f, 3f), Vector3.left * 2f); SpawnMoving(DiceKind.Attack, 1, new Vector3(-0.8f, 1.5f, 3f), Vector3.right * 2f); SpawnMoving(DiceKind.Attack, 1, new Vector3(0.6f, 1.5f, 3f), Vector3.left * 2f); break; case AcceptanceScenario.VictoryInterrupt: _enemies.Clear(); _enemies.Add(new EnemyModel(EnemyKind.Goblin, "哥布林", 1, new[] { 99 })); SpawnMoving(DiceKind.Attack, 1, new Vector3(-2.8f, 1.5f, 2f), Vector3.right * 2f); SpawnMoving(DiceKind.Attack, 1, new Vector3(-1.4f, 1.5f, 2f), Vector3.left * 2f); break; case AcceptanceScenario.DefeatInterrupt: _player.Reset("游侠", 60, 1, 0); _enemies.RemoveAt(1); _enemies[0].ForceIntent(IntentKind.Attack, 8); break; case AcceptanceScenario.PhysicsTimeout: SpawnMoving(DiceKind.Shield, 1, new Vector3(-2f, 1.5f, 2.5f), Vector3.right * 0.2f); break; }
             CreateCharacterViews(); AddLog("已载入：" + ScenarioShort(scenario) + "，随机种子" + (BattleBalance.Seed + (int)scenario * 97)); BeginRound();
@@ -131,17 +186,74 @@ namespace DiceDemo.M1
         private void RollNextDie() { _nextKind = (DiceKind)_random.Next(0, 3); _nextLevel = _random.NextDouble() < 0.78 ? 1 : 2; }
         private void AddLog(string message) { _battleLog.Insert(0, message); if (_battleLog.Count > 8) _battleLog.RemoveAt(_battleLog.Count - 1); }
 
-        private IEnumerator RunCommandLineSmokeTest() { float deadline = Time.realtimeSinceStartup + 3f; while (_phase.Current != BattlePhase.PlayerAim && Time.realtimeSinceStartup < deadline) yield return null; if (_phase.Current != BattlePhase.PlayerAim) { Debug.LogError("M1三维冒烟失败：未进入瞄准阶段"); Application.Quit(2); yield break; } LaunchToward(new Vector3(-0.8f, 0.8f, 4f)); deadline = Time.realtimeSinceStartup + 8f; while (_round < 2 && _phase.Current != BattlePhase.Victory && _phase.Current != BattlePhase.Defeat && Time.realtimeSinceStartup < deadline) yield return null; bool passed = _round >= 2 || _phase.Current == BattlePhase.Victory || _phase.Current == BattlePhase.Defeat; if (passed) { Debug.Log("M1三维冒烟通过 阶段=" + PhaseShort(_phase.Current) + " 回合=" + _round); Application.Quit(0); } else { Debug.LogError("M1三维冒烟失败：回合未收尾"); Application.Quit(3); } }
+        private IEnumerator RunCommandLineSmokeTest() { float deadline = Time.realtimeSinceStartup + 3f; while (_phase.Current != BattlePhase.PlayerAim && Time.realtimeSinceStartup < deadline) yield return null; if (_phase.Current != BattlePhase.PlayerAim) { Debug.LogError("M1三维冒烟失败：未进入瞄准阶段"); Application.Quit(2); yield break; } LaunchToward((new Vector3(-0.8f, 0.8f, 4f) - new Vector3(BattleBalance.LaunchX, BattleBalance.LaunchY, BattleBalance.LaunchZ)).normalized, 0.72f); deadline = Time.realtimeSinceStartup + 8f; while (_round < 2 && _phase.Current != BattlePhase.Victory && _phase.Current != BattlePhase.Defeat && Time.realtimeSinceStartup < deadline) yield return null; bool passed = _round >= 2 || _phase.Current == BattlePhase.Victory || _phase.Current == BattlePhase.Defeat; if (passed) { Debug.Log("M1三维冒烟通过 阶段=" + PhaseShort(_phase.Current) + " 回合=" + _round); Application.Quit(0); } else { Debug.LogError("M1三维冒烟失败：回合未收尾"); Application.Quit(3); } }
         private IEnumerator RunCommandLineCapture() { _debugOpen = true; float deadline = Time.realtimeSinceStartup + 3f; while (_phase.Current != BattlePhase.PlayerAim && Time.realtimeSinceStartup < deadline) yield return null; yield return new WaitForSecondsRealtime(0.5f); string path = GetArgumentValue("-m1CapturePath"); if (string.IsNullOrWhiteSpace(path)) path = System.IO.Path.Combine(Application.persistentDataPath, "M1-preview.png"); ScreenCapture.CaptureScreenshot(path); yield return new WaitForSecondsRealtime(1f); Debug.Log("M1截图完成 路径=" + path); Application.Quit(0); }
         private static bool HasArgument(string expected) { string[] args = Environment.GetCommandLineArgs(); for (int i = 0; i < args.Length; i++) if (string.Equals(args[i], expected, StringComparison.OrdinalIgnoreCase)) return true; return false; }
         private static string GetArgumentValue(string name) { string[] args = Environment.GetCommandLineArgs(); for (int i = 0; i < args.Length - 1; i++) if (string.Equals(args[i], name, StringComparison.OrdinalIgnoreCase)) return args[i + 1]; return null; }
 
         private void EnsureGuiStyles() { if (_panelStyle != null) return; _panelTexture = MakeTexture(new Color(0.02f, 0.035f, 0.07f, 0.92f)); _buttonTexture = MakeTexture(new Color(0.13f, 0.32f, 0.58f, 0.98f)); _selectedButtonTexture = MakeTexture(new Color(0.68f, 0.40f, 0.10f, 0.98f)); _panelStyle = new GUIStyle(GUI.skin.box) { normal = { background = _panelTexture } }; _titleStyle = new GUIStyle(GUI.skin.label) { fontSize = 30, fontStyle = FontStyle.Bold, normal = { textColor = Color.white } }; _labelStyle = new GUIStyle(GUI.skin.label) { fontSize = 19, fontStyle = FontStyle.Bold, normal = { textColor = new Color(1f, 0.86f, 0.38f) } }; _smallStyle = new GUIStyle(GUI.skin.label) { fontSize = 15, normal = { textColor = new Color(0.9f, 0.94f, 1f) } }; _buttonStyle = new GUIStyle(GUI.skin.button) { fontSize = 16, fontStyle = FontStyle.Bold, normal = { background = _buttonTexture, textColor = Color.white }, hover = { background = _buttonTexture, textColor = Color.yellow } }; _selectedButtonStyle = new GUIStyle(_buttonStyle) { normal = { background = _selectedButtonTexture, textColor = Color.white } }; }
         private static Texture2D MakeTexture(Color color) { Texture2D texture = new Texture2D(2, 2); texture.SetPixels(new[] { color, color, color, color }); texture.Apply(); return texture; }
+        private static Texture2D MakeCircleTexture(int size, Color fill, Color edge, int edgeWidth)
+        {
+            Texture2D texture = new Texture2D(size, size, TextureFormat.RGBA32, false) { name = "AimCircle" };
+            float center = (size - 1) * 0.5f, outer = center, inner = Mathf.Max(0f, outer - edgeWidth);
+            Color[] pixels = new Color[size * size];
+            for (int y = 0; y < size; y++) for (int x = 0; x < size; x++)
+            {
+                float distance = Vector2.Distance(new Vector2(x, y), new Vector2(center, center));
+                pixels[y * size + x] = distance <= inner ? fill : distance <= outer ? edge : Color.clear;
+            }
+            texture.SetPixels(pixels); texture.Apply(); return texture;
+        }
+
+        private void UpdateAimCenter()
+        {
+            Vector3 screen = _camera.WorldToScreenPoint(new Vector3(BattleBalance.LaunchX, BattleBalance.LaunchY, BattleBalance.LaunchZ));
+            _aimCenterGui = new Vector2(screen.x, Screen.height - screen.y);
+            if (!_isAiming) _aimKnobGui = _aimCenterGui;
+        }
+
         private void OnGUI() { EnsureGuiStyles(); DrawHeader(); DrawBattlePanel(); DrawAimGuide(); if (_debugOpen) DrawAcceptancePanel(); if (_phase.Current == BattlePhase.Victory || _phase.Current == BattlePhase.Defeat) DrawResult(); }
-        private void DrawHeader() { GUI.Box(new Rect(12f, 12f, Screen.width - 24f, 116f), GUIContent.none, _panelStyle); GUI.Label(new Rect(132f, 18f, 560f, 42f), "符文骰子·三维战斗切片", _titleStyle); GUI.Label(new Rect(132f, 66f, 650f, 28f), "第" + _round + "回合｜" + PhaseShort(_phase.Current) + "｜" + ScenarioShort(_scenario), _labelStyle); GUI.Label(new Rect(132f, 96f, 700f, 24f), "在牌桌内按住鼠标左键瞄准，松开后投掷。按F10打开验收模式", _smallStyle); GUI.Label(new Rect(Screen.width - 300f, 24f, 280f, 26f), BattleBalance.Version, _labelStyle); GUI.Label(new Rect(Screen.width - 300f, 58f, 280f, 24f), "随机种子：" + (BattleBalance.Seed + (int)_scenario * 97), _smallStyle); GUI.Label(new Rect(Screen.width - 300f, 84f, 280f, 24f), "下一枚：" + KindShort(_nextKind) + "，第" + _nextLevel + "级", _smallStyle); }
+        private void DrawHeader() { GUI.Box(new Rect(12f, 12f, Screen.width - 24f, 116f), GUIContent.none, _panelStyle); GUI.Label(new Rect(132f, 18f, 560f, 42f), "符文骰子·三维战斗切片", _titleStyle); GUI.Label(new Rect(132f, 66f, 650f, 28f), "第" + _round + "回合｜" + PhaseShort(_phase.Current) + "｜" + ScenarioShort(_scenario), _labelStyle); GUI.Label(new Rect(132f, 96f, 700f, 24f), "拖动生成点中心按钮，向反方向投掷；松开后投掷。按F10打开验收模式", _smallStyle); GUI.Label(new Rect(Screen.width - 300f, 24f, 280f, 26f), BattleBalance.Version, _labelStyle); GUI.Label(new Rect(Screen.width - 300f, 58f, 280f, 24f), "随机种子：" + (BattleBalance.Seed + (int)_scenario * 97), _smallStyle); GUI.Label(new Rect(Screen.width - 300f, 84f, 280f, 24f), "下一枚：" + KindShort(_nextKind) + "，第" + _nextLevel + "级", _smallStyle); }
         private void DrawBattlePanel() { float x = Screen.width * 0.78f, y = 142f, width = Screen.width - x - 12f; GUI.Box(new Rect(x, y, width, Screen.height - y - 12f), GUIContent.none, _panelStyle); GUI.Label(new Rect(x + 14f, y + 10f, width - 28f, 28f), "玩家", _labelStyle); GUI.Label(new Rect(x + 14f, y + 42f, width - 28f, 24f), "生命 " + _player.Health + "/" + _player.MaxHealth + "　护盾 " + _player.Shield, _smallStyle); float lineY = y + 82f; for (int i = 0; i < _enemies.Count; i++) { EnemyModel enemy = _enemies[i]; string intent = enemy.Unit.IsAlive ? (enemy.IntentKind == IntentKind.Attack ? "攻击 " + enemy.IntentValue : "等待") : "已击败"; GUI.Label(new Rect(x + 14f, lineY, width - 28f, 25f), enemy.Unit.Name + "　生命 " + enemy.Unit.Health + "/" + enemy.Unit.MaxHealth, _smallStyle); GUI.Label(new Rect(x + 14f, lineY + 24f, width - 28f, 24f), "行动预告：" + intent, _labelStyle); lineY += 58f; } GUI.Label(new Rect(x + 14f, lineY + 4f, width - 28f, 26f), "合并队列　" + _effectQueue.Count, _labelStyle); GUI.Label(new Rect(x + 14f, lineY + 32f, width - 28f, 24f), "场上骰子：" + FindObjectsOfType<BattleDie>().Length + "　连锁：" + _mergeService.CurrentChainDepth, _smallStyle); lineY += 70f; GUI.Label(new Rect(x + 14f, lineY, width - 28f, 26f), "战斗记录", _labelStyle); lineY += 30f; for (int i = 0; i < _battleLog.Count; i++) GUI.Label(new Rect(x + 14f, lineY + i * 23f, width - 28f, 23f), _battleLog[i], _smallStyle); if (_physicsTimedOut) GUI.Label(new Rect(x + 14f, Screen.height - 48f, width - 28f, 24f), "已触发物理超时保护", _labelStyle); }
-        private void DrawAimGuide() { if (!_isAiming || _camera == null) return; Vector3 origin = _camera.WorldToScreenPoint(new Vector3(BattleBalance.LaunchX, BattleBalance.LaunchY, 1.4f)), target = _camera.WorldToScreenPoint(_aimWorld); DrawLine(new Vector2(origin.x, Screen.height - origin.y), new Vector2(target.x, Screen.height - target.y), new Color(1f, 0.82f, 0.2f), 5f); GUI.Label(new Rect(origin.x - 60f, Screen.height - origin.y - 28f, 160f, 24f), "从这里投掷", _smallStyle); }
+        private void DrawAimGuide()
+        {
+            if (_camera == null || _phase == null || _phase.Current != BattlePhase.PlayerAim) return;
+            UpdateAimCenter();
+            if (_aimRingTexture == null) _aimRingTexture = MakeCircleTexture(192, new Color(0.05f, 0.20f, 0.32f, 0.30f), new Color(0.35f, 0.85f, 1f, 0.95f), 5);
+            if (_aimButtonTexture == null) _aimButtonTexture = MakeCircleTexture(56, new Color(1f, 0.55f, 0.12f, 1f), new Color(1f, 0.92f, 0.55f, 1f), 3);
+            GUI.DrawTexture(new Rect(_aimCenterGui.x - AimRadius, _aimCenterGui.y - AimRadius, AimRadius * 2f, AimRadius * 2f), _aimRingTexture);
+
+            Vector2 knob = _isAiming ? _aimKnobGui : _aimCenterGui;
+            GUI.DrawTexture(new Rect(knob.x - AimKnobRadius, knob.y - AimKnobRadius, AimKnobRadius * 2f, AimKnobRadius * 2f), _aimButtonTexture);
+            GUI.Label(new Rect(_aimCenterGui.x - 95f, _aimCenterGui.y + AimRadius + 10f, 190f, 24f), _isAiming ? "拖动瞄准，松开投掷" : "拖动中心按钮投掷", _smallStyle);
+
+            if (!_isAiming || _aimStrength <= 0.001f) return;
+            Vector3 origin = new Vector3(BattleBalance.LaunchX, BattleBalance.LaunchY, BattleBalance.LaunchZ), target, velocity;
+            float flightTime;
+            if (!AimTrajectoryMath.TryCalculateLaunch(origin, _aimDirection, _aimStrength, Physics.gravity, out target, out velocity, out flightTime)) return;
+            Vector2 previous = WorldToGui(origin);
+            for (int i = 1; i <= AimTrajectorySegments; i++)
+            {
+                float t = flightTime * i / AimTrajectorySegments;
+                Vector3 point = origin + velocity * t + 0.5f * Physics.gravity * t * t;
+                if (point.y < BattleBalance.BoardSurfaceY) point.y = BattleBalance.BoardSurfaceY;
+                Vector2 current = WorldToGui(point);
+                DrawLine(previous, current, new Color(1f, 0.83f, 0.22f, 0.92f), 4f);
+                previous = current;
+            }
+            Vector2 targetGui = WorldToGui(target);
+            GUI.color = new Color(1f, 0.35f, 0.12f, 0.9f);
+            GUI.DrawTexture(new Rect(targetGui.x - 7f, targetGui.y - 7f, 14f, 14f), Texture2D.whiteTexture);
+            GUI.color = Color.white;
+            GUI.Label(new Rect(_aimCenterGui.x - 70f, _aimCenterGui.y - AimRadius - 28f, 140f, 24f), "力度 " + Mathf.RoundToInt(_aimStrength * 100f) + "%", _smallStyle);
+        }
+
+        private Vector2 WorldToGui(Vector3 world)
+        {
+            Vector3 screen = _camera.WorldToScreenPoint(world);
+            return new Vector2(screen.x, Screen.height - screen.y);
+        }
         private static void DrawLine(Vector2 a, Vector2 b, Color color, float width) { Matrix4x4 matrix = GUI.matrix; Color old = GUI.color; GUI.color = color; float angle = Vector3.Angle(b - a, Vector2.right); if (a.y > b.y) angle = -angle; GUIUtility.RotateAroundPivot(angle, a); GUI.DrawTexture(new Rect(a.x, a.y - width * 0.5f, (b - a).magnitude, width), Texture2D.whiteTexture); GUI.matrix = matrix; GUI.color = old; }
         private void DrawAcceptancePanel() { float width = Mathf.Min(620f, Screen.width * 0.40f), x = Screen.width * 0.37f, y = 142f; GUI.Box(new Rect(x, y, width, Screen.height - y - 12f), GUIContent.none, _panelStyle); GUI.Label(new Rect(x + 14f, y + 10f, width - 28f, 30f), "F10验收模式（调试数据）", _labelStyle); GUI.Label(new Rect(x + 14f, y + 40f, width - 28f, 24f), "场景：三维战斗　阶段：" + PhaseShort(_phase.Current), _smallStyle); float by = y + 76f; AcceptanceScenario[] scenarios = (AcceptanceScenario[])Enum.GetValues(typeof(AcceptanceScenario)); for (int i = 0; i < scenarios.Length; i++) { int col = i % 2, row = i / 2; Rect rect = new Rect(x + 14f + col * width * 0.48f, by + row * 36f, width * 0.45f, 30f); if (GUI.Button(rect, ScenarioShort(scenarios[i]), scenarios[i] == _scenario ? _selectedButtonStyle : _buttonStyle)) LoadScenario(scenarios[i]); } by += 154f; GUI.Label(new Rect(x + 14f, by, width - 28f, 25f), "生成骰子", _labelStyle); by += 30f; DiceKind[] kinds = (DiceKind[])Enum.GetValues(typeof(DiceKind)); for (int i = 0; i < kinds.Length; i++) if (GUI.Button(new Rect(x + 14f + i * (width - 40f) / 3f, by, (width - 54f) / 3f, 30f), KindShort(kinds[i]), _nextKind == kinds[i] ? _selectedButtonStyle : _buttonStyle)) _nextKind = kinds[i]; by += 36f; if (GUI.Button(new Rect(x + 14f, by, 42f, 30f), "减", _buttonStyle)) _nextLevel = Mathf.Max(1, _nextLevel - 1); GUI.Label(new Rect(x + 64f, by + 2f, 90f, 25f), "第" + _nextLevel + "级", _smallStyle); if (GUI.Button(new Rect(x + 150f, by, 42f, 30f), "加", _buttonStyle)) _nextLevel = Mathf.Min(6, _nextLevel + 1); if (GUI.Button(new Rect(x + 208f, by, 104f, 30f), "生成左侧", _buttonStyle)) SpawnResting(_nextKind, _nextLevel, new Vector3(-3.2f, 1.5f, 3f)); if (GUI.Button(new Rect(x + 320f, by, 120f, 30f), "生成中央", _buttonStyle)) SpawnResting(_nextKind, _nextLevel, new Vector3(-1.1f, 1.5f, 3f)); if (GUI.Button(new Rect(x + 448f, by, 104f, 30f), "生成右侧", _buttonStyle)) SpawnResting(_nextKind, _nextLevel, new Vector3(1.1f, 1.5f, 3f)); by += 44f; GUI.Label(new Rect(x + 14f, by, 150f, 25f), "玩家生命 " + _player.Health, _smallStyle); if (GUI.Button(new Rect(x + 165f, by, 42f, 28f), "减", _buttonStyle)) _player.Reset(_player.Name, _player.MaxHealth, _player.Health - 1, _player.Shield); if (GUI.Button(new Rect(x + 211f, by, 42f, 28f), "加", _buttonStyle)) _player.Reset(_player.Name, _player.MaxHealth, _player.Health + 1, _player.Shield); by += 38f; EnemyModel targetEnemy = FirstLivingEnemy(); if (targetEnemy != null) { GUI.Label(new Rect(x + 14f, by, 160f, 25f), "敌人生命 " + targetEnemy.Unit.Health, _smallStyle); if (GUI.Button(new Rect(x + 160f, by, 42f, 28f), "减", _buttonStyle)) targetEnemy.Unit.Reset(targetEnemy.Unit.Name, targetEnemy.Unit.MaxHealth, targetEnemy.Unit.Health - 1, targetEnemy.Unit.Shield); if (GUI.Button(new Rect(x + 206f, by, 42f, 28f), "加", _buttonStyle)) targetEnemy.Unit.Reset(targetEnemy.Unit.Name, targetEnemy.Unit.MaxHealth, targetEnemy.Unit.Health + 1, targetEnemy.Unit.Shield); if (GUI.Button(new Rect(x + 262f, by, 150f, 28f), "预告攻击八点", _buttonStyle)) targetEnemy.ForceIntent(IntentKind.Attack, 8); } by += 40f; GUI.Label(new Rect(x + 14f, by, 110f, 25f), "表现速度", _smallStyle); float[] speeds = { 1f, 2f, 3f }; string[] speedNames = { "一倍", "两倍", "三倍" }; for (int i = 0; i < speeds.Length; i++) if (GUI.Button(new Rect(x + 104f + i * 72f, by, 64f, 28f), speedNames[i], Mathf.Approximately(_presentationSpeed, speeds[i]) ? _selectedButtonStyle : _buttonStyle)) _presentationSpeed = speeds[i]; if (GUI.Button(new Rect(x + 330f, by, 120f, 28f), "重新挑战", _buttonStyle)) LoadScenario(_scenario); }
         private void DrawResult() { Rect rect = new Rect(Screen.width * 0.5f - 220f, Screen.height * 0.5f - 105f, 440f, 210f); GUI.Box(rect, GUIContent.none, _panelStyle); GUIStyle centered = new GUIStyle(_titleStyle) { alignment = TextAnchor.MiddleCenter }; GUI.Label(new Rect(rect.x, rect.y + 22f, rect.width, 55f), _resultMessage, centered); GUI.Label(new Rect(rect.x + 30f, rect.y + 78f, rect.width - 60f, 28f), ScenarioShort(_scenario) + "｜" + BattleBalance.Version, _smallStyle); if (GUI.Button(new Rect(rect.x + 55f, rect.y + 125f, 150f, 48f), "重新挑战", _buttonStyle)) LoadScenario(_scenario); if (GUI.Button(new Rect(rect.x + 235f, rect.y + 125f, 150f, 48f), "标准战斗", _buttonStyle)) LoadScenario(AcceptanceScenario.Standard); }

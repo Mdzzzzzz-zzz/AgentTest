@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using UnityEngine;
 
 namespace DiceDemo.M1.Tests
 {
@@ -118,6 +119,49 @@ namespace DiceDemo.M1.Tests
             Assert.AreEqual(IntentKind.Wait, enemy.IntentKind);
             enemy.AdvanceIntent();
             Assert.AreEqual(8, enemy.IntentValue);
+        }
+
+        [TestCase(1f, 0f, 0f, 6.95f)]
+        [TestCase(-1f, 0f, 0f, 2.55f)]
+        [TestCase(0f, 0f, 1f, 6.8f)]
+        [TestCase(0f, 0f, -1f, 0.7f)]
+        public void AimTrajectory_FullDragReachesFirstBoardEdge(float directionX, float directionY, float directionZ, float expectedDistance)
+        {
+            Vector3 origin = new Vector3(BattleBalance.LaunchX, BattleBalance.LaunchY, BattleBalance.LaunchZ);
+            float distance = AimTrajectoryMath.MaxBoardDistance(origin, new Vector3(directionX, directionY, directionZ));
+            Assert.AreEqual(expectedDistance, distance, 0.001f);
+        }
+
+        [Test]
+        public void AimTrajectory_SolvedPathEndsAtTargetAndRisesAboveLaunch()
+        {
+            Vector3 origin = new Vector3(BattleBalance.LaunchX, BattleBalance.LaunchY, BattleBalance.LaunchZ);
+            Vector3 target, velocity;
+            float flightTime;
+            Assert.IsTrue(AimTrajectoryMath.TryCalculateLaunch(origin, Vector3.forward, 1f,
+                new Vector3(0f, -30f, 0f), out target, out velocity, out flightTime));
+
+            Vector3 end = origin + velocity * flightTime + 0.5f * new Vector3(0f, -30f, 0f) * flightTime * flightTime;
+            Assert.AreEqual(target.x, end.x, 0.001f);
+            Assert.AreEqual(target.y, end.y, 0.001f);
+            Assert.AreEqual(target.z, end.z, 0.001f);
+            Assert.Greater(origin.y + velocity.y * (velocity.y / 30f) - 0.5f * 30f * (velocity.y / 30f) * (velocity.y / 30f), origin.y);
+        }
+
+        [Test]
+        public void AimTrajectory_StrengthScalesDistanceLinearly()
+        {
+            Vector3 origin = new Vector3(BattleBalance.LaunchX, BattleBalance.LaunchY, BattleBalance.LaunchZ);
+            Vector3 halfTarget, halfVelocity;
+            float halfTime;
+            Vector3 fullTarget, fullVelocity;
+            float fullTime;
+            Assert.IsTrue(AimTrajectoryMath.TryCalculateLaunch(origin, Vector3.right, 0.5f,
+                new Vector3(0f, -30f, 0f), out halfTarget, out halfVelocity, out halfTime));
+            Assert.IsTrue(AimTrajectoryMath.TryCalculateLaunch(origin, Vector3.right, 1f,
+                new Vector3(0f, -30f, 0f), out fullTarget, out fullVelocity, out fullTime));
+            Assert.AreEqual((origin.x + fullTarget.x) * 0.5f, halfTarget.x, 0.001f);
+            Assert.AreEqual((origin.z + fullTarget.z) * 0.5f, halfTarget.z, 0.001f);
         }
     }
 }
