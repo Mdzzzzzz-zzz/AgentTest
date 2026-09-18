@@ -1,0 +1,7 @@
+magic="UnityFS\u0000" ver=8 verStr=5.x.x unity=2022.3.62t14
+bundleSize=518837 cbiSize=288 ubiSize=486 flags=0x243
+header end offset = 51
+compression type = 3 (0=none,1=LZMA,2=LZ4,3=LZ4HC)
+encryptionFlag(0x200) = SET
+LZ4 attempts failed at all offsets 51..83
+bytes@hdrEnd: 000000000000000000000000001e00010030160002070042aa6400030a00248b370a00247b4e0a002417ac0a00240215

@@ -1,0 +1,27 @@
+﻿== Assets\Tests tree (recursive) ==
+Assets\Tests\DemoA|DIR
+Assets\Tests\DemoB|DIR
+Assets\Tests\DemoC|DIR
+Assets\Tests\EditMode|DIR
+Assets\Tests\Editor|DIR
+Assets\Tests\DemoA.meta|196
+Assets\Tests\DemoB.meta|196
+Assets\Tests\DemoC.meta|196
+Assets\Tests\EditMode.meta|196
+Assets\Tests\Editor.meta|196
+Assets\Tests\DemoA\DemoA.Tests.asmdef|445
+Assets\Tests\DemoA\DemoA.Tests.asmdef.meta|190
+Assets\Tests\DemoA\DemoADeskTests.cs|1635
+Assets\Tests\DemoA\DemoADeskTests.cs.meta|267
+Assets\Tests\DemoB\DemoB.Tests.asmdef|445
+Assets\Tests\DemoB\DemoB.Tests.asmdef.meta|190
+Assets\Tests\DemoB\DemoBDiceTests.cs|3514
+Assets\Tests\DemoB\DemoBDiceTests.cs.meta|267
+Assets\Tests\DemoC\DemoC.Tests.asmdef|445
+Assets\Tests\DemoC\DemoC.Tests.asmdef.meta|190
+Assets\Tests\DemoC\DemoCDiceTests.cs|5772
+Assets\Tests\DemoC\DemoCDiceTests.cs.meta|267
+Assets\Tests\EditMode\BattleDomainTests.cs|7194
+Assets\Tests\EditMode\BattleDomainTests.cs.meta|267
+Assets\Tests\EditMode\DiceDemo.M1.Tests.asmdef|441
+Assets\Tests\EditMode\DiceDemo.M1.Tests.asmdef.meta|190

@@ -1,0 +1,28 @@
+﻿dll size = 10985984
+[needle] WX-WASM-SDK-V2  ascii=0 unicode=10
+[needle] MiniGameConfig.asset  ascii=0 unicode=3
+[needle] ApplySettings  ascii=2 unicode=0
+[needle] DefaultWeChatBuildProfileHelper  ascii=1 unicode=0
+[needle] DefaultWeChatMiniGameSettings  ascii=2 unicode=0
+[needle] objectToOverwrite  ascii=1 unicode=0
+[needle] background.jpg  ascii=0 unicode=1
+[needle] ExternalMiniGame  ascii=2 unicode=0
+[needle] WeChat  ascii=12 unicode=9
+
+== ASCII context around 'WX-WASM-SDK-V2' / 'MiniGameConfig.asset' / 'ApplySettings' ==
+[U:WX-WASM-SDK-V2] /WX-WASM-SDK-V2
+[U:WX-WASM-SDK-V2] Assets/WX-WASM-SDK-V2
+[U:WX-WASM-SDK-V2] Assets/WX-WASM-SDK-V2.meta
+[U:WX-WASM-SDK-V2] Assets/WX-WASM-SDK-V2/Editor
+[U:WX-WASM-SDK-V2] Assets/WX-WASM-SDK-V2/Runtime/wechat-default/images
+[U:WX-WASM-SDK-V2] Assets/WX-WASM-SDK-V2/Editor/MiniGameConfig.asset
+[U:WX-WASM-SDK-V2] Assets/WX-WASM-SDK-V2/Editor/PlayableConfig.asset
+[U:WX-WASM-SDK-V2] Assets/WX-WASM-SDK-V2/Runtime/WxWasmSDKRuntime.asmdef
+[U:WX-WASM-SDK-V2] Assets/WX-WASM-SDK-V2/Editor/PlayableConfig.asset
+[U:WX-WASM-SDK-V2] Assets/WX-WASM-SDK-V2/Editor/MiniGameConfig.asset
+[U:MiniGameConfig.asset] /Editor/MiniGameConfig.asset
+[U:MiniGameConfig.asset] Assets/WX-WASM-SDK-V2/Editor/MiniGameConfig.asset
+[U:MiniGameConfig.asset] Assets/WX-WASM-SDK-V2/Editor/MiniGameConfig.asset
+[A:ApplySettings] ApplySettingsToTextures
+[A:ApplySettings] ApplySettings
+[A:DefaultWeChatBuildProfileHelper] DefaultWeChatBuildProfileHelper

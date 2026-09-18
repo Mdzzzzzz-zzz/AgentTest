@@ -1,0 +1,74 @@
+=== LOGS TOP 12 BY MTIME ===
+  shadercompiler-AssetImportWorker0.log  SIZE=356  MTIME=2026-09-17T14:45:05.8985098+08:00
+  wx-build.log  SIZE=22151  MTIME=2026-09-16T18:15:25.7959288+08:00
+  wx-probe.log  SIZE=22084  MTIME=2026-09-16T16:44:12.0297509+08:00
+  AssetImportWorker0.log  SIZE=20462  MTIME=2026-09-16T16:41:17.2528945+08:00
+  AssetImportWorker1.log  SIZE=15799  MTIME=2026-09-16T16:40:36.5410623+08:00
+  shadercompiler-TuanjieShaderCompiler.exe0.log  SIZE=195  MTIME=2026-09-16T16:39:02.8967547+08:00
+  mat-check.png  SIZE=378041  MTIME=2026-09-16T11:41:33.4182331+08:00
+  spikeA-compile-status.txt  SIZE=847  MTIME=2026-09-15T18:12:03.5289839+08:00
+  spikeA-diag6.txt  SIZE=251  MTIME=2026-09-15T18:11:25.9830655+08:00
+  spikeA-compile.log  SIZE=35970  MTIME=2026-09-15T18:01:29.8515398+08:00
+  spikeA-diag5.txt  SIZE=569  MTIME=2026-09-15T18:00:39.2990630+08:00
+  spikeA-diag4.txt  SIZE=1188  MTIME=2026-09-15T17:49:42.1064773+08:00
+=== TUANJIE Editor.log TAIL 60 ===
+    [ALLOC_CACHEOBJECTS_MAIN]
+      Peak usage frame count: [16.0 MB-32.0 MB]: 31 frames, [32.0 MB-64.0 MB]: 2 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 8
+      Peak Allocated memory 61.4 MB
+      Peak Large allocation bytes 34.3 MB
+    [ALLOC_CACHEOBJECTS_THREAD]
+      Peak usage frame count: [128.0 KB-256.0 KB]: 32 frames, [0.5 MB-1.0 MB]: 1 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 1
+      Peak Allocated memory 0.7 MB
+      Peak Large allocation bytes 0 B
+[ALLOC_TYPETREE] Dual Thread Allocator
+  Peak main deferred allocation count 485
+    [ALLOC_BUCKET]
+      Large Block size 32.0 MB
+      Used Block count 1
+      Peak Allocated bytes 9.7 MB
+    [ALLOC_TYPETREE_MAIN]
+      Peak usage frame count: [64.0 KB-128.0 KB]: 1 frames, [128.0 KB-256.0 KB]: 1 frames, [0.5 MB-1.0 MB]: 10 frames, [1.0 MB-2.0 MB]: 1 frames, [2.0 MB-4.0 MB]: 19 frames, [4.0 MB-8.0 MB]: 1 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 3
+      Peak Allocated memory 4.3 MB
+      Peak Large allocation bytes 0 B
+    [ALLOC_TYPETREE_THREAD]
+      Peak usage frame count: [1.0 KB-2.0 KB]: 33 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 1
+      Peak Allocated memory 2.0 KB
+      Peak Large allocation bytes 0 B
+[ALLOC_PROFILER]
+  Peak usage frame count: [64.0 KB-128.0 KB]: 32 frames, [256.0 KB-0.5 MB]: 1 frames
+  Requested Block Size 16.0 MB
+  Peak Block count 1
+  Peak Allocated memory 258.2 KB
+  Peak Large allocation bytes 0 B
+    [ALLOC_PROFILER_BUCKET]
+      Large Block size 32.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.1 KB
+[ALLOC_PROFILER_EDITOR]
+  Peak usage frame count: [0-1.0 KB]: 33 frames
+  Requested Block Size 1.0 MB
+  Peak Block count 0
+  Peak Allocated memory 0 B
+  Peak Large allocation bytes 0 B
+    [ALLOC_PROFILER_BUCKET]
+      Large Block size 32.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.1 KB
+[ Total Memory ] : 6.90MB ( 4463 ) registered: 0.00MB ( 0 ) not-owned: 0.00MB ( 0 ) owned: 0.00MB ( 0 ) [acc: 0.00MB ( 0u )]
+[ ALLOC_FALLBACK ] : 3237.66KB ( 911 ) registered: 0.00MB ( 0 ) (Requested:3237.66KB, Overhead:42.62KB, Reserved:7.01MB)
+BucketAllocator is shared between allocators for fast small allocations
+[ ALLOC_BUCKET ] : 135.85KB ( 3067 ) registered: [registered with original label] (Requested:135.85KB, Overhead:140.36KB, Reserved:32.00MB)
+[ ALLOC_MEMORYPROFILER ] : 209.16KB ( 294 ) registered: 0.00KB ( 0 ) not-owned: 209.16kB ( 294 ) owned: 0.00kB ( 0 ) [acc: 0.00MB ( 0 )] (Requested:209.16KB, Overhead:11.20KB, Reserved:1.00MB)
+[ ALLOC_DEFAULT ] : 3452.12KB ( 170 ) registered: 0.00KB ( 0 ) not-owned: 3452.12kB ( 170 ) owned: 0.00kB ( 0 ) [acc: 0.00MB ( 0 )] (Requested:3452.12KB, Overhead:6.47KB, Reserved:128.00MB)
+[ ALLOC_GFX ] : 0.09KB ( 1 ) registered: 0.00KB ( 0 ) not-owned: 0.09kB ( 1 ) owned: 0.00kB ( 0 ) [acc: 0.00MB ( 0 )] (Requested:0.09KB, Overhead:0.04KB, Reserved:48.00MB)
+[ ALLOC_CACHEOBJECTS ] : 24.34KB ( 9 ) registered: 0.00KB ( 0 ) not-owned: 24.34kB ( 9 ) owned: 0.00kB ( 0 ) [acc: 0.00MB ( 0 )] (Requested:24.34KB, Overhead:0.34KB, Reserved:20.00MB)
+[ ALLOC_TYPETREE ] : 10.86KB ( 11 ) registered: 0.00KB ( 0 ) not-owned: 10.86kB ( 11 ) owned: 0.00kB ( 0 ) [acc: 0.00MB ( 0 )] (Requested:10.86KB, Overhead:0.42KB, Reserved:6.00MB)
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1789627509227,"processId":60968,"allocatedMemory":16609938,"memoryLabels":[{"Default":21115},{"Permanent":15867},{"NewDelete":143070},{"MallocFree":12},{"Thread":4229536},{"PVS":12},{"Manager":38851},{"DynamicGeometry":12},{"VertexData":24},{"ImmediateGeometry":12},{"Geometry":572},{"BatchedGeometry":12},{"Particles":12},{"VFX":12},{"Infinity":12},{"Texture":3276},{"Shader":95359},{"Material":68},{"TextureCache":12},{"GfxDevice":59452},{"GfxThread":12},{"Animation":404},{"Audio":311378},{"MiniAudio":12},{"AudioData":12},{"AudioProcessing":12},{"AudioTemp":12},{"FMODOther":6188},{"FMODStreamFile":12},{"FMODStreamDecode":12},{"FMODSample":12},{"Font":12},{"FontEngine":324},{"AdvanceTextProcessor":12},{"Physics":525},{"Physics2D":12},{"Serialization":1000},{"Input":14756},{"IO":12},{"IO2":12},{"ThreadStack":12},{"JobScheduler":34716},{"TextAsset":12},{"GarbageCollector":12},{"GLib":12},{"GLibImage":12},{"Mono":52},{"MonoCode":12},{"ScriptingNativeRuntime":193652},{"BaseObject":1628728},{"Resource":1468},{"Renderer":2461},{"Transform":44},{"File":25508},{"Network":12},{"WebCam":108},{"MemoryProfilerString":12},{"Culling":52},{"Skinning":28},{"Terrain":1341},{"TerrainPhysics":12},{"Wind":52},{"Shadow":12},{"STL":196},{"String":15833},{"StaticString":12},{"DynamicArray":110975},{"HashMap":135161},{"Pair":12},{"UTF16String":54},{"Utility":2850510},{"Curl":1436},{"PoolAlloc":5892},{"AI":116},{"TypeTree":16433},{"ScriptManager":652},{"RuntimeInitializeOnLoadManager":92},{"AncestorCache":12},{"Sprites":12},{"SpriteAtlas":140},{"GI":2820},{"Unet":12},{"ClusterRenderer":12},{"ClusterInput":12},{"Director":7972},{"GPUMemory":12},{"CloudService":700},{"WebRequest":700},{"VR":46097},{"AR":12},{"SceneManager":580},{"Video":84},{"LazyScriptCache":52},{"Tilemap":12},{"Speech":12},{"SceneLoad":12},{"ManagedAttributeManager":12},{"TextureStreaming":12},{"iOSReplayKit":12},{"NativeArray":24},{"ScreenCapture":12},{"Camera":37},{"Secure":205},{"Yoga":12},{"Image":12},{"CrashReporter":12},{"SerializationCache":1596},{"APIUpdating":11884},{"Subsystems":404},{"VirtualTexturing":57908},{"StaticSafetyDebugInfo":327692},{"AssetStore":12},{"Baselib":12},{"NativePlugin":12},{"RenderingWorker":3145900},{"Test":12},{"EditorGui":268292},{"EditorUtility":118039},{"VersionControl":16},{"UndoBuffer":12},{"Undo":716},{"AssetDatabase":2598195},{"AssetUsage":12},{"StreamingManager":12},{"PreviewImage":12},{"AssetImporter":12},{"RestService":436},{"EditorGi":388},{"ProgressiveLightmapper":12},{"Yaml":12},{"License":3724},{"UnityConnect":25580},{"WebViewCallback":12},{"Collab":605},{"Upm":2092},{"UpmDiagnostics":12},{"DrivenProperties":108},{"HubClient":12},{"ChannelService":12},{"LocalIPC":300},{"ProfilerEditor":11003},{"CoreBusinessMetrics":3853},{"Gizmos":12},{"LiveLink":12},{"Bootstrap":12},{"ShaderUcode":12},{"TLS":3443},{"XboxOneGpuOnionMemory":12},{"XboxOneGpuGarlicMemory":12},{"SwitchDynLibMemory":12},{"Licensing":12},{"AssetReference":52},{"CachingManager":12},{"IPCStream":52},{"PhysicalGPUMemory":12},{"TuanjieGI":12}]}

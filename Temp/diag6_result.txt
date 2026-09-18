@@ -1,0 +1,84 @@
+found=0 (LZ4 blocksInfo candidates with asset dir), scanned 518837 offsets
+=> NO valid LZ4 block-info anywhere in data.tj3d => content compressed+encrypted
+
+--- printable runs >= 6 chars in data.tj3d (first 80) ---
+  @0 (7) UnityFS
+  @18 (12) 2022.3.62t14
+  @198 (18) globalgamemanagers
+  @228 (31) Resources/tuanjie_builtin_extra
+  @274 (8) c.assetb
+  @295 (8) bshared!
+  @320 (7) blevel0
+  @344 (7) .assets
+  @375 (12) 2022.3.62t14
+  @1066 (26) globalgamemanagers.assets#
+  @1099 (33) Library/tuanjie default resources
+  @1145 (14) _builtin_extra
+  @1162 (7) bshared
+  @1330 (6) _com.-
+  @1351 (33) e29f57056e1cfbcda1602ada91e36982p
+  @1487 (20) ublic.app-category.5
+  @1613 (8) Very Low
+  @1629 (7) bMedium
+  @1678 (10) orizontalN
+  @1700 (6) Cight<
+  @1729 (7) XticalT
+  @1737 (6) @down|
+  @1761 (6) [Fire1
+  @1773 (6) D ctri
+  @1784 (7) mouse 0
+  @1831 (6) \shift
+  @1847 (6) LJumph
+  @1854 (7) Yspace*
+  @1899 (11) ScrollWheek
+  @1954 (17) joystick button 0
+  @2010 (7) nSubmit
+  @2019 (8) oreturn\
+  @2037 (6) NnterP
+  @2048 (7) nCancel
+  @2057 (7) oescape
+  @2075 (14) Enable Debug B
+  @2111 (6) Hbackp
+  @2133 (7) _Resetp
+  @2160 (7) Ppage }
+  @2182 (9) Previoush
+  @2207 (8) Validate
+  @2227 (9) ersistent
+  @2253 (10) Multiplier
+  @2318 (12) iceVanisherL
+  @2349 (13) TransparentFX
+  @2365 (15) Ignore Raycastl
+  @2427 (8) `dden/I_
+  @2437 (15) nalErrorShader,
+  @2460 (6) `Clear
+  @2477 (9) -ColoredL
+  @2493 (7) Loading
+  @2508 (9) GUI/Text 
+  @2531 (7) QFrame`
+  @2541 (22) gerRenderTargetDisplay
+  @2569 (7) SegacyV
+  @2577 (7) `s/Diff
+  @2596 (9) sBumped 3
+  @2614 (9) Specular(
+  @2638 (8) cDetail$
+  @2657 (6) gexLit
+  @2679 (8) Parallax
+  @2705 (11) elf-Illumin
+  @2784 (10) StencilWri
+  @2801 (11) ReflectiveS
+  @2959 (7) nmapped
+  @3004 (10) tandard ($
+  @3015 (9) s setup);
+  @3039 (9) Autodesk 
+  @3058 (7) ^Cutou/
+  @3111 (12) DepthNormals
+  @3138 (7) `creenS
+  @3163 (7) Xmbineo
+  @3182 (9) BlitCopy 
+  @3210 (8) tConvert
+  @3231 (9) ferredSh 
+  @3271 (7) lVector
+  @3294 (7) X/Flare
+  @3318 (15) Skybox/Cubemap 
+  @3335 (9) r6 Sided8
+  @3350 (6) \-Halo

@@ -1,0 +1,22 @@
+﻿ABSENT|Assets\Scenes\DiceDemoC.unity
+ABSENT|Assets\Scenes\DiceDemoC.unity.meta
+ABSENT|Assets\Scenes\DeskDemoA.unity
+ABSENT|Assets\Scenes\DeskDemoA.unity.meta
+ABSENT|Assets\Scenes\DiceMergeDemo.unity
+ABSENT|Assets\Scenes\DiceMergeDemo.unity.meta
+ABSENT|Assets\Scenes\BattleM1.m1.0.0-backup.unity
+ABSENT|Assets\Scenes\BattleM1.m1.0.0-backup.unity.meta
+ABSENT|Assets\Tests\DemoA\DemoADeskTests.cs
+ABSENT|Assets\Tests\DemoA\DemoADeskTests.cs.meta
+ABSENT|Assets\Tests\DemoA\DemoA.Tests.asmdef
+ABSENT|Assets\Tests\DemoA\DemoA.Tests.asmdef.meta
+ABSENT|Assets\Tests\DemoA.meta
+ABSENT|Assets\Tests\DemoC\DemoCDiceTests.cs
+ABSENT|Assets\Tests\DemoC\DemoCDiceTests.cs.meta
+ABSENT|Assets\Tests\DemoC\DemoC.Tests.asmdef
+ABSENT|Assets\Tests\DemoC\DemoC.Tests.asmdef.meta
+ABSENT|Assets\Tests\DemoC.meta
+ABSENT|Assets\Tests\DemoA
+ABSENT|Assets\Tests\DemoC
+== total bytes deleted ==
+571047

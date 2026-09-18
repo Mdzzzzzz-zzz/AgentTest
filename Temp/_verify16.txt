@@ -1,0 +1,150 @@
+﻿== git status --short (repo root D:/NewOne) ==
+ D Client-Dice/Assets/DemoB/Generated.meta
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 1_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 1_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 2_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 2_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 3_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 3_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 4_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 4_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 5_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 5_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 6_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 6_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 7_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 7_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 8_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 8_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 9_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 9_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 1_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 1_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 2_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 2_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 3_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 3_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 4_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 4_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 5_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 5_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 6_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 6_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 7_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 7_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 8_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 8_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 9_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 9_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Outline_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Outline_\344\277\256\345\244\215.mat.meta"
+ D Client-Dice/Assets/Editor/DemoA.meta
+ D Client-Dice/Assets/Editor/DemoA/DemoA.Editor.asmdef
+ D Client-Dice/Assets/Editor/DemoA/DemoA.Editor.asmdef.meta
+ D Client-Dice/Assets/Editor/DemoA/DemoABuild.cs
+ D Client-Dice/Assets/Editor/DemoA/DemoABuild.cs.meta
+ D Client-Dice/Assets/Editor/DemoB.meta
+ D Client-Dice/Assets/Editor/DemoB/DemoB.Editor.asmdef
+ D Client-Dice/Assets/Editor/DemoB/DemoB.Editor.asmdef.meta
+ D Client-Dice/Assets/Editor/DemoB/DemoBBuild.cs
+ D Client-Dice/Assets/Editor/DemoB/DemoBBuild.cs.meta
+ D Client-Dice/Assets/Editor/DemoC.meta
+ D Client-Dice/Assets/Editor/DemoC/DemoC.Editor.asmdef
+ D Client-Dice/Assets/Editor/DemoC/DemoC.Editor.asmdef.meta
+ D Client-Dice/Assets/Editor/DemoC/DemoCBuild.cs
+ D Client-Dice/Assets/Editor/DemoC/DemoCBuild.cs.meta
+ M Client-Dice/Assets/Editor/M1Build.cs
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Mage_Healing.png
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Mage_Healing.png.meta
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Warrior_Fury.png
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Warrior_Fury.png.meta
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Warrior_Shield.png
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Warrior_Shield.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_1.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_1.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_2.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_2.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_3.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_3.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_4.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_4.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_5.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_5.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_6.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_6.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Main_Menu_Background_01.png
+ D Client-Dice/Assets/Resources/DiceDemo/Main_Menu_Background_01.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Rune_Dice_Logo_01.png
+ D Client-Dice/Assets/Resources/DiceDemo/Rune_Dice_Logo_01.png.meta
+ D Client-Dice/Assets/Scenes/BattleM1.m1.0.0-backup.unity
+ D Client-Dice/Assets/Scenes/BattleM1.m1.0.0-backup.unity.meta
+ D Client-Dice/Assets/Scenes/DeskDemoA.unity
+ D Client-Dice/Assets/Scenes/DeskDemoA.unity.meta
+ D Client-Dice/Assets/Scenes/DiceDemoB.unity
+ D Client-Dice/Assets/Scenes/DiceDemoB.unity.meta
+ D Client-Dice/Assets/Scenes/DiceDemoC.unity
+ D Client-Dice/Assets/Scenes/DiceDemoC.unity.meta
+ D Client-Dice/Assets/Scenes/DiceMergeDemo.unity
+ D Client-Dice/Assets/Scenes/DiceMergeDemo.unity.meta
+ D Client-Dice/Assets/Scripts/DiceMergeGame.cs
+ D Client-Dice/Assets/Scripts/DiceMergeGame.cs.meta
+ M Client-Dice/Assets/Scripts/Runtime/Gameplay/BattleFlow.cs
+ D Client-Dice/Assets/Tests/DemoA.meta
+ D Client-Dice/Assets/Tests/DemoA/DemoA.Tests.asmdef
+ D Client-Dice/Assets/Tests/DemoA/DemoA.Tests.asmdef.meta
+ D Client-Dice/Assets/Tests/DemoA/DemoADeskTests.cs
+ D Client-Dice/Assets/Tests/DemoA/DemoADeskTests.cs.meta
+ D Client-Dice/Assets/Tests/DemoB.meta
+ D Client-Dice/Assets/Tests/DemoB/DemoB.Tests.asmdef
+ D Client-Dice/Assets/Tests/DemoB/DemoB.Tests.asmdef.meta
+ D Client-Dice/Assets/Tests/DemoB/DemoBDiceTests.cs
+ D Client-Dice/Assets/Tests/DemoB/DemoBDiceTests.cs.meta
+ D Client-Dice/Assets/Tests/DemoC.meta
+ D Client-Dice/Assets/Tests/DemoC/DemoC.Tests.asmdef
+ D Client-Dice/Assets/Tests/DemoC/DemoC.Tests.asmdef.meta
+ D Client-Dice/Assets/Tests/DemoC/DemoCDiceTests.cs
+ D Client-Dice/Assets/Tests/DemoC/DemoCDiceTests.cs.meta
+ M Client-Dice/ProjectSettings/EditorBuildSettings.asset
+?? .workbuddy/
+?? Client-Dice/Assets/Editor/FR2Editor.meta
+?? Client-Dice/Assets/Editor/FR2Editor/
+?? Client-Dice/Assets/Editor/WeixinMiniGameBuild.cs
+?? Client-Dice/Assets/Editor/WeixinMiniGameBuild.cs.meta
+?? Client-Dice/Assets/FR2_Cache.asset
+?? Client-Dice/Assets/FR2_Cache.asset.meta
+?? Client-Dice/Assets/Scripts/Runtime/Input.meta
+?? Client-Dice/Assets/Scripts/Runtime/Input/
+?? Client-Dice/Docs/Platform/
+?? Temp/Backup-SpikeA-20260915/
+?? Temp/_ctxdefs.py
+?? Temp/_guid.py
+?? Temp/_guid2.py
+?? Temp/_guid3.py
+?? Temp/_guid4.py
+?? Temp/_guid5.py
+?? Temp/_ps_del2.txt
+?? Temp/_ps_del3.txt
+?? Temp/_ps_diag2.txt
+?? Temp/_ps_editor.txt
+?? Temp/_ps_err.txt
+?? Temp/_ps_final.txt
+?? Temp/_ps_git.txt
+?? Temp/_ps_grep.txt
+?? Temp/_ps_grep2.txt
+?? Temp/_ps_probe.txt
+?? Temp/_ps_res.txt
+?? Temp/_ps_state.txt
+?? Temp/_ps_tests.txt
+?? Temp/_ps_tests2.txt
+?? Temp/_ps_verify.txt
+?? Temp/_scandefs.py
+?? Temp/_scene_census.py
+?? Temp/_scene_mats.py
+?? Temp/_verify14.txt
+?? Temp/_verify15.txt
+?? Temp/_zoom.py
+?? Temp/_zoom/
+?? _recon_sizes.txt
+?? _recon_tmp.txt
+-- end git status --

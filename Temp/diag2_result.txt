@@ -1,0 +1,66 @@
+decompressed bytes: 2331071
+magic: "TuanjieWebData1.0\u0000"
+headerSize: 241
+  file[0] name="data.tj3d" off=241 size=518837
+  file[1] name="RuntimeInitializeOnLoads.json" off=519078 size=154
+  file[2] name="ScriptingAssemblies.json" off=519232 size=2867
+  file[3] name="Resources/tuanjie_default_resources" off=522099 size=389936
+  file[4] name="boot.config" off=912035 size=158
+  file[5] name="Il2CppData/Metadata/global-metadata.dat" off=912193 size=1418878
+
+utf8    1	data.tj3d
+utf8    12	RuntimeInitialize
+utf8    1	tj3d
+utf8    16	Border
+utf8    1	One Side
+utf8    2	Outline
+utf8    1	Die 
+utf8    1	Die Border 
+utf8    0	Die One Side 
+utf8    2	Splash
+utf8    0	splash
+utf8    6	BattleM1
+utf8    23	Resources
+utf8    1	Jersey10
+utf8    1	骰子数字深度遮挡
+utf8    1	阶段丙修复
+utf8    18	DemoC
+utf8    11	DemoB
+utf8    11	DemoA
+utf8    8	Texture2D
+utf8    0	TextMeshPro
+utf8    0	RogueSprite
+utf8    5	goblin
+utf8    11	MonoBehaviour
+utf8    2	material
+utf8    49	Material
+utf8    0	.mat
+
+utf16le 0	Border
+utf16le 0	One Side
+utf16le 0	Outline
+utf16le 0	Die 
+utf16le 0	阶段丙修复
+utf16le 0	material
+
+offset of "Die Border 1_阶段丙修复": 197137
+ctx hex  : 28000994020fd80004180ebc010ff81208110ef619866e652052756e6573f5120fe018751f1dc80c681f1de018ffffffff4844dae7103f04000cc80c0c1c000fe01835100b9c05656f677565537040131f2cb40c101e04e0110fe804a21302e823f7065f4f55544c494e4553414d504c45434f524e4552535c0005fc0c476869636bf0081403a8110f4808094f46696c6c8401031e0028080e010004541ff10d44696520426f7264657220315fe998b6e6aeb5e4b899e4bfaee5a48d60240fb801101f092407181e101c050f30000a160b3000069d050f5c000f0558050f78145d18110c050fb40714190d2c050f30000f180c40050fb8000c0418010ffc06010eb8060f9806240d60062b803f600600e4051f3d4406072e803f440603680707380f0f54061c1f3ce405110fd0051d1106ec0a33565365a5000c84051b02bc03
+ctx ascii: (.....................ne Runes.....u....h........HD...?...........5....eogueSp@..,..............#.._OUTLINESAMPLECORNERS\....Ghick.......H..OFill.....(.....T...Die Border 1_...............`$......$.......0....0.....\...X..x.]..........,..0....@..................$.`.+.?`.....=D....?D..h..8..T...<...........3VSe.........
+
+  @3984 ... ..0..,0..PRound...c0.&/#...0......z..PerBorder.@#....5UIRg...+ .#...H,.TAtlas...0...#...\.]World...0
+  @67058 ... .....x..A.2.........!q.....`..`.........BorderWidj...<..CornerRadiuse<....%.........CRect....L.Rmoot
+  @197141 ... .Ghick.......H..OFill.....(.....T...Die Border 1_...............`$......$.......0....0.....\...X..x.
+  @464228 ... ..`./.%...........?^GD8....8...ie_Voxel_Borders,.*8.0...L..?...,..*p.,......H...H...L...........6.S.
+  @1188001 ... tureArguments.screenRect.sourceRect.leftBorder.rightBorder.topBorder.bottomBorder.leftBorderColor.ri
+  @1188013 ... s.screenRect.sourceRect.leftBorder.rightBorder.topBorder.bottomBorder.leftBorderColor.rightBorderCol
+  @1188023 ... ct.sourceRect.leftBorder.rightBorder.topBorder.bottomBorder.leftBorderColor.rightBorderColor.topBord
+  @1188036 ... .leftBorder.rightBorder.topBorder.bottomBorder.leftBorderColor.rightBorderColor.topBorderColor.botto
+  @1188047 ... .rightBorder.topBorder.bottomBorder.leftBorderColor.rightBorderColor.topBorderColor.bottomBorderColo
+  @1188064 ... order.bottomBorder.leftBorderColor.rightBorderColor.topBorderColor.bottomBorderColor.color.borderWid
+  @1188079 ... der.leftBorderColor.rightBorderColor.topBorderColor.bottomBorderColor.color.borderWidths.cornerRadiu
+  @1188097 ... r.rightBorderColor.topBorderColor.bottomBorderColor.color.borderWidths.cornerRadiuses.smoothCorners.
+  @1235739 ... RectMaterial.get_roundedRectWithColorPerBorderMaterial.GrabMouseControl.HasMouseControl.ReleaseMouse
+  @1236507 ... ndedRectMaterial.roundedRectWithColorPerBorderMaterial.nextScrollStepTime.skin.matrix.scrollViewStat
+  @1240401 ... rmal.m_OnHover.m_OnActive.m_OnFocused.m_Border.m_Padding.m_Margin.m_Overflow.showKeyboardFocus.s_Non
+  @2247344 ... l.X,......VGetGUIRoundedRectWithColorPerBorderMaterial.................e,......X,......xGetGUIState(
+total "Border" ascii matches shown: 16

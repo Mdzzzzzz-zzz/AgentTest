@@ -1,0 +1,63 @@
+===== wx-runtime.dll =====
+  UnityEngine.CoreModule  exact=0 sub=0
+  UnityEngine.AssetBundleModule  exact=0 sub=0
+  UnityEngine.TextRenderingModule  exact=0 sub=0
+  UnityEngine.UnityWebRequestModule  exact=0 sub=0
+  UnityEngine.UnityWebRequestAssetBundleModule  exact=0 sub=0
+  DownloadHandlerAssetBundle  exact=0 sub=0
+  DownloadHandlerWXAssetBundle  exact=1 sub=1
+  UnityWebRequestAssetBundle  exact=0 sub=0
+  UnityWebRequest  exact=1 sub=1
+  DownloadHandler  exact=1 sub=3
+  Font  exact=0 sub=9
+  AssetBundle  exact=0 sub=8
+  TextRenderingModule  exact=0 sub=0
+  AssetBundleModule  exact=0 sub=0
+
+===== Unity.FontABTool.dll =====
+  UnityEngine.CoreModule  exact=1 sub=1
+  UnityEngine.AssetBundleModule  exact=0 sub=0
+  UnityEngine.TextRenderingModule  exact=0 sub=0
+  UnityEngine.UnityWebRequestModule  exact=0 sub=0
+  UnityEngine.UnityWebRequestAssetBundleModule  exact=0 sub=0
+  DownloadHandlerAssetBundle  exact=0 sub=0
+  DownloadHandlerWXAssetBundle  exact=0 sub=0
+  UnityWebRequestAssetBundle  exact=0 sub=0
+  UnityWebRequest  exact=0 sub=0
+  DownloadHandler  exact=0 sub=0
+  Font  exact=0 sub=15
+  AssetBundle  exact=1 sub=3
+  TextRenderingModule  exact=0 sub=0
+  AssetBundleModule  exact=0 sub=0
+
+===== wx-perf.dll =====
+  UnityEngine.CoreModule  exact=0 sub=0
+  UnityEngine.AssetBundleModule  exact=0 sub=0
+  UnityEngine.TextRenderingModule  exact=0 sub=0
+  UnityEngine.UnityWebRequestModule  exact=0 sub=0
+  UnityEngine.UnityWebRequestAssetBundleModule  exact=0 sub=0
+  DownloadHandlerAssetBundle  exact=0 sub=0
+  DownloadHandlerWXAssetBundle  exact=0 sub=0
+  UnityWebRequestAssetBundle  exact=0 sub=0
+  UnityWebRequest  exact=0 sub=0
+  DownloadHandler  exact=0 sub=0
+  Font  exact=1 sub=1
+  AssetBundle  exact=1 sub=1
+  TextRenderingModule  exact=0 sub=0
+  AssetBundleModule  exact=0 sub=0
+
+===== LitJson.dll =====
+  UnityEngine.CoreModule  exact=0 sub=0
+  UnityEngine.AssetBundleModule  exact=0 sub=0
+  UnityEngine.TextRenderingModule  exact=0 sub=0
+  UnityEngine.UnityWebRequestModule  exact=0 sub=0
+  UnityEngine.UnityWebRequestAssetBundleModule  exact=0 sub=0
+  DownloadHandlerAssetBundle  exact=0 sub=0
+  DownloadHandlerWXAssetBundle  exact=0 sub=0
+  UnityWebRequestAssetBundle  exact=0 sub=0
+  UnityWebRequest  exact=0 sub=0
+  DownloadHandler  exact=0 sub=0
+  Font  exact=0 sub=0
+  AssetBundle  exact=0 sub=0
+  TextRenderingModule  exact=0 sub=0
+  AssetBundleModule  exact=0 sub=0

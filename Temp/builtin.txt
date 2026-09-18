@@ -1,0 +1,85 @@
+module dirs count=71
+cn.tuanjie.animgraph
+cn.tuanjie.infinity
+cn.tuanjie.riggraph
+cn.tuanjie.streamer-system
+com.unity.2d.common
+com.unity.2d.sprite
+com.unity.2d.tilemap
+com.unity.feature.2d
+com.unity.feature.ar
+com.unity.feature.characters-animation
+com.unity.feature.cinematic
+com.unity.feature.development
+com.unity.feature.gameplay-storytelling
+com.unity.feature.mobile
+com.unity.feature.vr
+com.unity.feature.worldbuilding
+com.unity.modules.ai
+com.unity.modules.androidappview
+com.unity.modules.androidjni
+com.unity.modules.animation
+com.unity.modules.assetbundle
+com.unity.modules.audio
+com.unity.modules.autostreaming
+com.unity.modules.cloth
+com.unity.modules.director
+com.unity.modules.imageconversion
+com.unity.modules.imgui
+com.unity.modules.infinity
+com.unity.modules.instantasset
+com.unity.modules.jsonserialize
+com.unity.modules.nvidia
+com.unity.modules.occlusionculling
+com.unity.modules.particlesystem
+com.unity.modules.physics
+com.unity.modules.physics2d
+com.unity.modules.screencapture
+com.unity.modules.subsystems
+com.unity.modules.terrain
+com.unity.modules.terrainphysics
+com.unity.modules.texturemanager
+com.unity.modules.tilemap
+com.unity.modules.tuanjiegi
+com.unity.modules.ui
+com.unity.modules.uielements
+com.unity.modules.uielementsnative
+com.unity.modules.umbra
+com.unity.modules.unityanalytics
+com.unity.modules.unitywebrequest
+com.unity.modules.unitywebrequestassetbundle
+com.unity.modules.unitywebrequestaudio
+com.unity.modules.unitywebrequesttexture
+com.unity.modules.unitywebrequestwww
+com.unity.modules.vehicles
+com.unity.modules.video
+com.unity.modules.vr
+com.unity.modules.wind
+com.unity.modules.xr
+com.unity.package-manager-ui
+com.unity.render-pipelines.core
+com.unity.render-pipelines.high-definition
+com.unity.render-pipelines.high-definition-config
+com.unity.render-pipelines.universal
+com.unity.render-pipelines.universal-config
+com.unity.rendering.denoising
+com.unity.shaderanalysis
+com.unity.shadergraph
+com.unity.ugui
+com.unity.ui
+com.unity.ui.builder
+com.unity.visualeffectgraph
+nuget.mono-cecil
+
+--- com.unity.modules.ui ---
+{ "name": "com.unity.modules.ui", "version": "1.0.0", "type": "module", "displayName": "UI", "description": "The UI module implements basic components required for Unity's UI system Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIModule.html", "icon": ".icon.png", "dependencies": {} }
+--- com.unity.modules.imgui ---
+{ "name": "com.unity.modules.imgui", "version": "1.0.0", "type": "module", "displayName": "IMGUI", "description": "The IMGUI module provides Unity's immediate mode GUI solution for creating in-game and editor user interfaces. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.IMGUIModule.html", "icon": ".icon.png", "dependencies": {} }
+--- com.unity.modules.textrendering ---
+  (missing package.json)
+--- com.unity.modules.uielements ---
+{ "name": "com.unity.modules.uielements", "version": "1.0.0", "type": "module", "displayName": "UIElements", "description": "The UIElements module implements the UIElements retained mode UI framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html", "icon": null, "dependencies": { "com.unity.modules.ui": "1.0.0", "com.unity.modules.imgui": "1.0.0", "com.unity.modules.jsonserialize": "1.0.0" } }
+--- com.unity.modules.assetbundle ---
+{ "name": "com.unity.modules.assetbundle", "version": "1.0.0", "type": "module", "displayName": "Asset Bundle", "description": "The AssetBundle module implements the AssetBundle class and related APIs to load data from AssetBundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AssetBundleModule.html", "icon": null, "dependencies": {} }
+--- com.unity.modules.unitywebrequest ---
+{ "name": "com.unity.modules.unitywebrequest", "version": "1.0.0", "type": "module", "displayName": "Unity Web Request", "description": "The UnityWebRequest module lets you communicate with http services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestModule.html", "icon": null, "dependencies": {} }

@@ -8,13 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BattleM1.unity
     guid: 96c395d8890c41b686d4b44204bb933f
+  m_BuildProfiles:
   - enabled: 1
-    path: Assets/Scenes/DeskDemoA.unity
-    guid: c26d2e5319f18064e809ff104ce07e17
-  - enabled: 1
-    path: Assets/Scenes/DiceDemoC.unity
-    guid: 082fe98cccbd1204088753e35a60f510
-  m_BuildProfiles: []
+    path: Assets/Settings/Build Profiles/New WeChat Profile.asset
+    guid: 90ccb3678cf994f4cad7dc47f67b0182
   m_configObjects: {}
   m_SlimFeaturesWeixinMiniGame:
     ACLDecompression: 0

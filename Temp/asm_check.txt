@@ -1,0 +1,51 @@
+== Library/ScriptAssemblies ==
+  Cn.Tuanjie.Codely.Editor.dll
+  Cn.Tuanjie.Codely.Editor.pdb
+  Codely.Common.dll
+  Codely.Common.pdb
+  DiceDemo.DemoA.dll
+  DiceDemo.DemoA.pdb
+  DiceDemo.DemoB.dll
+  DiceDemo.DemoB.pdb
+  DiceDemo.DemoC.dll
+  DiceDemo.DemoC.pdb
+  DiceDemo.M1.Editor.dll
+  DiceDemo.M1.Editor.pdb
+  DiceDemo.M1.Tests.dll
+  DiceDemo.M1.Tests.pdb
+  DiceDemo.Runtime.dll
+  DiceDemo.Runtime.pdb
+  FindReference2.Editor.dll
+  FindReference2.Editor.pdb
+  tjgenerators.Editor.dll
+  tjgenerators.Editor.pdb
+  TJGenerators.Runtime.dll
+  TJGenerators.Runtime.pdb
+  Unity.EditorCoroutines.Editor.dll
+  Unity.EditorCoroutines.Editor.pdb
+  Unity.VisualStudio.Editor.dll
+  Unity.VisualStudio.Editor.pdb
+  UnityEditor.TestRunner.dll
+  UnityEditor.TestRunner.pdb
+  UnityEditor.UI.dll
+  UnityEditor.UI.pdb
+  UnityEngine.TestRunner.dll
+  UnityEngine.TestRunner.pdb
+  UnityEngine.UI.dll
+  UnityEngine.UI.pdb
+  UnityTcp.CustomTool.dll
+  UnityTcp.CustomTool.pdb
+  UnityTcp.Editor.dll
+  UnityTcp.Editor.pdb
+
+root exists: C:/Program Files/Tuanjie
+  textrendering dir: not found
+  ugui dir: C:\Program Files\Tuanjie\Hub\Editor\2022.3.62t14\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui
+  ugui package.json: { "name": "com.unity.ugui", "displayName": "Unity UI", "version": "1.0.0", "unity": "2019.2", "keywords": ["UI", "ugui", "Unity UI", "Canvas"], "description": "Unity UI is a set of tools for developing user interfaces for games and applications. It is a GameObject-based UI system that uses Components and the Game View to arrange, position, and style user interfaces. ​ You cannot use Unity UI to create or change user interfaces in the Unity Editor.", "dependencies": { "com.unity.modules.ui": "1.0.0", "com.unity.modules.imgui":"1.0.0" } }
+root exists: C:/Program Files/Unity
+  textrendering dir: not found
+  ugui dir: C:\Program Files\Unity\Hub\Editor\2022.3.59f1-x86_64\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui
+  ugui package.json: { "name": "com.unity.ugui", "displayName": "Unity UI", "version": "1.0.0", "unity": "2019.2", "keywords": ["UI", "ugui", "Unity UI", "Canvas"], "description": "Unity UI is a set of tools for developing user interfaces for games and applications. It is a GameObject-based UI system that uses Components and the Game View to arrange, position, and style user interfaces. ​ You cannot use Unity UI to create or change user interfaces in the Unity Editor.", "dependencies": { "com.unity.modules.ui": "1.0.0", "com.unity.modules.imgui":"1.0.0" } }
+(no) D:/Program Files/Tuanjie
+(no) D:/Tuanjie
+(no) C:/Tuanjie

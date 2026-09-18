@@ -1,0 +1,24 @@
+=== ROOT FILES (incl hidden) ===
+  d----- Build  SIZE=1
+  d----- TemplateData  SIZE=1
+  -a---- index.html  SIZE=4979
+=== Build/ ===
+  WxMiniGame.data.br  SIZE=911052
+  WxMiniGame.framework.js.br  SIZE=64581
+  WxMiniGame.loader.js  SIZE=20794
+  WxMiniGame.wasm.br  SIZE=3054751
+=== MODULE ROOT ===
+  d----- Bee
+  d----- BuildTools
+  d----- Documentation
+  d----- Managed
+  d----- Variations
+  -a---- modules.asset
+  -a---- UnityEditor.WeixinMiniGame.Extensions.dll
+  -a---- UnityEditor.WeixinMiniGame.Extensions.pdb
+  -a---- WeixinMiniGamePlayerBuildProgram.Data.dll
+  -a---- WeixinMiniGamePlayerBuildProgram.Data.pdb
+  -a---- WeixinMiniGamePlayerBuildProgram.exe
+  -a---- WeixinMiniGamePlayerBuildProgram.pdb
+  -a---- wxsdkver.txt
+=== MODULE: game.json / project.config candidates ===

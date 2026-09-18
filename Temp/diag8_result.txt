@@ -1,0 +1,57 @@
+decompressed blocksInfo+dir = 486 bytes
+blockCount=22
+blocks total uncompressed=2873556 compressed=518485
+(sanity) bundle data region expected ~ size(518837) - header/dir
+nodeCount=6
+parsed nodes=6
+  [0] off=0 size=33164 flags=4  globalgamemanagers
+  [1] off=33164 size=354608 flags=4  Resources/tuanjie_builtin_extra
+  [2] off=387772 size=1282520 flags=4  globalgamemanagers.assets
+  [3] off=1670292 size=1110692 flags=4  sharedassets0.assets
+  [4] off=2780984 size=83612 flags=4  level0
+  [5] off=2864596 size=8960 flags=4  resources.assets
+
+--- 19 materials vs DIRECTORY ---
+MISS  Die Border 1_阶段丙修复
+MISS  Die Border 2_阶段丙修复
+MISS  Die Border 3_阶段丙修复
+MISS  Die Border 4_阶段丙修复
+MISS  Die Border 5_阶段丙修复
+MISS  Die Border 6_阶段丙修复
+MISS  Die Border 7_阶段丙修复
+MISS  Die Border 8_阶段丙修复
+MISS  Die Border 9_阶段丙修复
+MISS  Die One Side 1_阶段丙修复
+MISS  Die One Side 2_阶段丙修复
+MISS  Die One Side 3_阶段丙修复
+MISS  Die One Side 4_阶段丙修复
+MISS  Die One Side 5_阶段丙修复
+MISS  Die One Side 6_阶段丙修复
+MISS  Die One Side 7_阶段丙修复
+MISS  Die One Side 8_阶段丙修复
+MISS  Die One Side 9_阶段丙修复
+MISS  Die Outline_阶段丙修复
+DIRECTORY HITS: 0 / 19
+
+block data starts at 352
+total decompressed block data = 2873556 bytes
+RAW-HIT  1  Die Border 1_阶段丙修复
+RAW-HIT  1  Die Border 2_阶段丙修复
+RAW-HIT  1  Die Border 3_阶段丙修复
+RAW-HIT  1  Die Border 4_阶段丙修复
+RAW-HIT  1  Die Border 5_阶段丙修复
+RAW-HIT  1  Die Border 6_阶段丙修复
+RAW-HIT  1  Die Border 7_阶段丙修复
+RAW-HIT  1  Die Border 8_阶段丙修复
+RAW-HIT  1  Die Border 9_阶段丙修复
+RAW-HIT  1  Die One Side 1_阶段丙修复
+RAW-HIT  1  Die One Side 2_阶段丙修复
+RAW-HIT  1  Die One Side 3_阶段丙修复
+RAW-HIT  1  Die One Side 4_阶段丙修复
+RAW-HIT  1  Die One Side 5_阶段丙修复
+RAW-HIT  1  Die One Side 6_阶段丙修复
+RAW-HIT  1  Die One Side 7_阶段丙修复
+RAW-HIT  1  Die One Side 8_阶段丙修复
+RAW-HIT  1  Die One Side 9_阶段丙修复
+RAW-HIT  1  Die Outline_阶段丙修复
+RAW-DECOMPRESSED HITS: 19 / 19

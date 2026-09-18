@@ -1,0 +1,4 @@
+EDITOR_INSTANCES=0
+--- raw Get-Process Tuanjie ---
+  ID=38408 PATH=[D:\Tools\Tuanjie\hub\tuanjie.exe] WS_MB=70.4
+  ID=91404 PATH=[] WS_MB=43.1

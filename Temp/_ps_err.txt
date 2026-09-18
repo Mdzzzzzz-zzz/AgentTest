@@ -1,0 +1,3 @@
+﻿ERRTYPE: System.Management.Automation.RuntimeException
+ERRMSG: [safe-delete][SAFE_DELETE_FAIL_CLOSED] {"target":"D:\\NewOne\\Client-Dice\\Assets\\Scenes\\DiceDemoC.unity.meta","reason":"trash-failed","detail":"ERROR D:\\NewOne\\Client-Dice\\Assets\\Scenes\\DiceDemoC.unity.meta: Error during a `trash` operation: Unknown { description: \"Some operations were aborted\" }"}
+stillExists: False

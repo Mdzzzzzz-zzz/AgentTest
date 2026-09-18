@@ -1,0 +1,82 @@
+=== WINDOW TITLES (tuanjie/unity) ===
+PID=52012 NAME=mcp-for-unity TITLE=[]
+PID=38408 NAME=tuanjie TITLE=[]
+PID=91404 NAME=tuanjie TITLE=[]
+PID=46112 NAME=Tuanjie.Licensing.Client TITLE=[]
+PID=6932 NAME=Unity TITLE=[]
+PID=28508 NAME=Unity TITLE=[]
+PID=29336 NAME=Unity TITLE=[jupiter_client - shop_cannon01_UI - Android - Unity 2022.3.59f1 <DX11>]
+PID=47400 NAME=Unity TITLE=[p777-client - room_1-1 - Windows, Mac, Linux - Unity 2022.3.59f1 <DX11>]
+PID=48256 NAME=Unity TITLE=[]
+PID=68160 NAME=Unity TITLE=[]
+PID=5420 NAME=Unity Hub TITLE=[]
+PID=10924 NAME=Unity Hub TITLE=[Unity Hub 3.5.1]
+PID=11496 NAME=Unity Hub TITLE=[]
+PID=13084 NAME=Unity Hub TITLE=[]
+PID=32756 NAME=Unity Hub TITLE=[]
+PID=32892 NAME=Unity Hub TITLE=[]
+PID=50880 NAME=Unity.ILPP.Runner TITLE=[]
+PID=79256 NAME=Unity.ILPP.Runner TITLE=[]
+PID=30740 NAME=Unity.Licensing.Client TITLE=[]
+PID=36152 NAME=Unity.Licensing.Client TITLE=[]
+PID=37240 NAME=UnityAutoQuitter TITLE=[]
+PID=44872 NAME=UnityAutoQuitter TITLE=[]
+PID=47816 NAME=UnityAutoQuitter TITLE=[]
+PID=50248 NAME=UnityAutoQuitter TITLE=[]
+PID=52904 NAME=UnityAutoQuitter TITLE=[]
+PID=53240 NAME=UnityAutoQuitter TITLE=[]
+PID=20680 NAME=UnityCrashHandler64 TITLE=[]
+PID=30668 NAME=UnityCrashHandler64 TITLE=[]
+PID=35276 NAME=UnityCrashHandler64 TITLE=[]
+PID=40756 NAME=UnityCrashHandler64 TITLE=[]
+PID=41456 NAME=UnityCrashHandler64 TITLE=[]
+PID=63600 NAME=UnityCrashHandler64 TITLE=[]
+PID=37720 NAME=UnityPackageManager TITLE=[]
+PID=51144 NAME=UnityPackageManager TITLE=[]
+PID=3996 NAME=UnityShaderCompiler TITLE=[]
+PID=13696 NAME=UnityShaderCompiler TITLE=[]
+PID=15376 NAME=UnityShaderCompiler TITLE=[]
+PID=38436 NAME=UnityShaderCompiler TITLE=[]
+PID=40168 NAME=UnityShaderCompiler TITLE=[]
+PID=44092 NAME=UnityShaderCompiler TITLE=[]
+PID=68164 NAME=UnityShaderCompiler TITLE=[]
+PID=71492 NAME=UnityShaderCompiler TITLE=[]
+PID=71812 NAME=UnityShaderCompiler TITLE=[]
+PID=73496 NAME=UnityShaderCompiler TITLE=[]
+PID=78452 NAME=UnityShaderCompiler TITLE=[]
+PID=83360 NAME=UnityShaderCompiler TITLE=[]
+PID=83524 NAME=UnityShaderCompiler TITLE=[]
+PID=85520 NAME=UnityShaderCompiler TITLE=[]
+PID=90184 NAME=UnityShaderCompiler TITLE=[]
+PID=91308 NAME=UnityShaderCompiler TITLE=[]
+PID=91868 NAME=UnityShaderCompiler TITLE=[]
+PID=91964 NAME=UnityShaderCompiler TITLE=[]
+=== EDITOR LOGS ===
+EXISTS C:\Users\youku\AppData\Local\Tuanjie\Editor\Editor.log  SIZE=352525 MTIME=2026-09-17T14:45:09.2270955+08:00
+EXISTS C:\Users\youku\AppData\Local\Unity\Editor\Editor.log  SIZE=24979061 MTIME=2026-09-17T15:16:03.3887658+08:00
+EXISTS D:\NewOne\Client-Dice\Logs\AssetImportWorker0.log  SIZE=20462 MTIME=2026-09-16T16:41:17.2528945+08:00
+EXISTS D:\NewOne\Client-Dice\Logs\AssetImportWorker1.log  SIZE=15799 MTIME=2026-09-16T16:40:36.5410623+08:00
+=== CLIENT-DICE LIBRARY RECENCY ===
+  EditorSnapSettings.asset  MTIME=2026-09-17T14:45:05.7101324+08:00
+  expandedItems  MTIME=2026-09-17T14:45:05.6515781+08:00
+  SourceAssetDB  MTIME=2026-09-17T14:45:05.5984911+08:00
+  ArtifactDB  MTIME=2026-09-17T14:45:05.5984911+08:00
+  LastSceneManagerSetup.txt  MTIME=2026-09-17T14:45:05.2973018+08:00
+  Resources  MTIME=2026-09-17T14:45:02.9657990+08:00
+  PackageCache  MTIME=2026-09-17T14:45:02.9642973+08:00
+  SpriteAtlasDatabase.asset  MTIME=2026-09-16T16:40:33.1877168+08:00
+  EditorOnlyScriptingSettings.json  MTIME=2026-09-16T16:40:32.2779418+08:00
+  Bee  MTIME=2026-09-16T16:40:32.2501491+08:00
+=== CLIENT-DICE ROOT RECENCY ===
+  d----- Logs  MTIME=2026-09-17T14:56:34.2071758+08:00
+  d----- Library  MTIME=2026-09-17T14:45:05.7101324+08:00
+  d----- Assets  MTIME=2026-09-17T14:45:05.4867499+08:00
+  -a---- .com-unity-codely.json  MTIME=2026-09-17T14:45:05.3134272+08:00
+  d----- ProjectSettings  MTIME=2026-09-17T14:45:02.9673725+08:00
+  -a---- DiceDemo.Runtime.csproj  MTIME=2026-09-16T16:40:29.3118602+08:00
+  d----- UserSettings  MTIME=2026-09-16T16:38:43.9309305+08:00
+  -a---- FindReference2.Editor.csproj  MTIME=2026-09-16T16:37:55.4335573+08:00
+  -a---- Client-Dice.sln  MTIME=2026-09-16T16:37:55.4280181+08:00
+  -a---- DiceDemo.DemoC.Tests.csproj  MTIME=2026-09-16T16:34:08.4472058+08:00
+  -a---- DiceDemo.DemoB.csproj  MTIME=2026-09-16T16:34:08.4383846+08:00
+  -a---- DiceDemo.DemoB.Editor.csproj  MTIME=2026-09-16T16:34:08.4257439+08:00

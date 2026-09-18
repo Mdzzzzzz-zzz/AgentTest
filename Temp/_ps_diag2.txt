@@ -1,0 +1,12 @@
+﻿preExists: False
+FileDelete OK
+postExists: False
+== Scenes now ==
+BattleM1.m1.0.0-backup.unity
+BattleM1.m1.0.0-backup.unity.meta
+BattleM1.unity
+BattleM1.unity.meta
+DeskDemoA.unity
+DeskDemoA.unity.meta
+DiceMergeDemo.unity
+DiceMergeDemo.unity.meta

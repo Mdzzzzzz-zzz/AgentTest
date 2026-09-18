@@ -1,0 +1,83 @@
+== Logs ==
+  aim-default-smoke.log  (17155)
+  aim-tests.log  (23021)
+  AssetImportWorker0-prev.log  (12200)
+  AssetImportWorker0.log  (57800)
+  AssetImportWorker1-prev.log  (11681)
+  AssetImportWorker1.log  (61332)
+  AssetImportWorker2.log  (12222)
+  AssetImportWorker3.log  (12219)
+  AssetImportWorker4.log  (17209)
+  AssetImportWorker5.log  (12219)
+  cn-build.log  (225697)
+  cn-capture.log  (12172)
+  cn-player-smoke.log  (13965)
+  cn-test-results.xml  (11267)
+  cn-tests.log  (131237)
+  demo-a-build-fixed.log  (268282)
+  demo-a-build.log  (255392)
+  demo-a-create.log  (111877)
+  demo-a-player-fixed.log  (1415)
+  demo-a-player.log  (12379)
+  demo-a-runtime.png  (213014)
+  demo-a-test-results.xml  (15755)
+  demo-a-tests-fixed.log  (484450)
+  demo-a-tests.log  (22135)
+  demo-a-window.png  (176721)
+  demo-b-player.log  (12457)
+  demo-b-runtime.png  (217027)
+  demo-c-create.log  (22177)
+  demo-c-player-smoke.log  (12620)
+  demo-c-runtime-capture.log  (13459)
+  demo-c-runtime.png  (345232)
+  m1-3d-actual-player-smoke.log  (17155)
+  m1-3d-final-build.log  (105573)
+  m1-3d-final-player-smoke.log  (17155)
+  m1-3d-final-test-results.xml  (27514)
+  m1-3d-player-smoke.log  (17338)
+  m1-3d-scene-create.log  (21662)
+  m1-3d-test-results.xml  (27480)
+  m1-3d-tests.log  (159574)
+  m1-build-target.log  (253158)
+  m1-build.log  (97233)
+  m1-capture.log  (18963)
+  m1-import.log  (331166)
+  m1-player-smoke-target.log  (20531)
+  m1-player-smoke.log  (20837)
+  m1-test-results.xml  (11272)
+  m1-tests-target.log  (222819)
+  m1-tests.log  (124981)
+  mat-check.png  (378041)
+  shadercompiler-AssetImportWorker0.log  (2994)
+  shadercompiler-TuanjieShaderCompiler.exe0.log  (195)
+  spikeA-backup-manifest.txt  (268)
+  spikeA-compile-status.txt  (847)
+  spikeA-compile.log  (35970)
+  spikeA-diag3.txt  (441)
+  spikeA-diag4.txt  (1188)
+  spikeA-diag5.txt  (569)
+  spikeA-diag6.txt  (251)
+  spikeA-lockcheck.txt  (1648)
+  spikeA-lockcheck2.txt  (2192)
+  spikeA-wait.log  (100)
+  wx-build.crash-0916.log  (22151)
+  wx-build.log  (255979)
+  wx-probe.crash-0916.log  (22084)
+  wx-probe.log  (324252)
+
+== DLL scan (ascii substring counts) ==
+
+--- LitJson.dll (60416 bytes) ---
+  (none of the probed tokens)
+
+--- Unity.FontABTool.dll (20992 bytes) ---
+  AssetBundle=3, Font=17, Shader=4, Material=3
+
+--- wx-perf.dll (55808 bytes) ---
+  AssetBundle=1, AudioClip=2, ParticleSystem=1, Font=1, Shader=1, Material=1, Texture2D=1, Canvas=2
+
+--- wx-runtime-editor.dll (275968 bytes) ---
+  AssetBundle=9, AudioSource=4, Microphone=1, Font=7, JsonUtility=1, UnityWebRequest=1, DownloadHandler=3, Canvas=5, ProfilerRecorder=1
+
+--- wx-runtime.dll (250880 bytes) ---
+  AssetBundle=9, AudioSource=4, Microphone=1, Font=9, JsonUtility=1, UnityWebRequest=1, DownloadHandler=3, Canvas=5, ProfilerRecorder=2

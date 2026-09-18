@@ -1,0 +1,42 @@
+﻿dir exists = True
+total files = 38
+== all *.dll ==
+Cn.Tuanjie.Codely.Editor.dll
+Codely.Common.dll
+DiceDemo.DemoA.dll
+DiceDemo.DemoB.dll
+DiceDemo.DemoC.dll
+DiceDemo.M1.Editor.dll
+DiceDemo.M1.Tests.dll
+DiceDemo.Runtime.dll
+FindReference2.Editor.dll
+tjgenerators.Editor.dll
+TJGenerators.Runtime.dll
+Unity.EditorCoroutines.Editor.dll
+Unity.VisualStudio.Editor.dll
+UnityEditor.TestRunner.dll
+UnityEditor.UI.dll
+UnityEngine.TestRunner.dll
+UnityEngine.UI.dll
+UnityTcp.CustomTool.dll
+UnityTcp.Editor.dll
+== Wx* hits ==
+== DiceDemo* / FindReference / UnityTcp hits ==
+DiceDemo.DemoA.dll
+DiceDemo.DemoA.pdb
+DiceDemo.DemoB.dll
+DiceDemo.DemoB.pdb
+DiceDemo.DemoC.dll
+DiceDemo.DemoC.pdb
+DiceDemo.M1.Editor.dll
+DiceDemo.M1.Editor.pdb
+DiceDemo.M1.Tests.dll
+DiceDemo.M1.Tests.pdb
+DiceDemo.Runtime.dll
+DiceDemo.Runtime.pdb
+FindReference2.Editor.dll
+FindReference2.Editor.pdb
+UnityTcp.CustomTool.dll
+UnityTcp.CustomTool.pdb
+UnityTcp.Editor.dll
+UnityTcp.Editor.pdb

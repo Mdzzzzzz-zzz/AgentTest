@@ -1,0 +1,129 @@
+﻿== grep scene-tokens hitCount=9
+Assets\Scripts\DemoB\DemoB.asmdef:2: "name": "DiceDemo.DemoB",
+Assets\Scripts\DemoB\DemoB.asmdef:3: "rootNamespace": "DiceDemo.DemoB",
+Assets\Scripts\DemoB\DemoBDiceRuntime.cs:5: namespace DiceDemo.DemoB
+Assets\Scripts\DemoB\DemoBDiceRuntime.cs:10: public sealed class DemoBDiceRuntime : MonoBehaviour
+Assets\Scripts\DemoB\DemoBDiceRuntime.cs:88: string capturePath = GetArgument("-demoBCapturePath");
+Assets\Scripts\DemoB\DemoBDiceRuntime.cs:97: if (HasArgument("-demoBQuitAfterCapture")) Application.Quit();
+Assets\Scripts\DemoB\DemoBDiceRuntime.cs:361: public sealed class DemoBFallDetector : MonoBehaviour
+Assets\Scripts\DemoB\DemoBDiceRuntime.cs:363: [SerializeField] private DemoBDiceRuntime _runtime;
+Assets\Scripts\DemoB\DemoBDiceRuntime.cs:365: public void Configure(DemoBDiceRuntime runtime)
+== grep Resources.Load hitCount=1
+Assets\Scripts\Runtime\Gameplay\BattleFlow.cs:89: private static Sprite LoadSprite(string path, float ppu) { Texture2D texture = Resources.Load<Texture2D>(path); return texture == null ? null : Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), ppu); }
+== git status -- Client-Dice/Assets ==
+ D Client-Dice/Assets/DemoB/Generated.meta
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 1_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 1_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 2_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 2_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 3_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 3_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 4_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 4_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 5_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 5_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 6_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 6_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 7_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 7_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 8_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 8_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 9_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Border 9_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 1_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 1_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 2_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 2_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 3_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 3_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 4_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 4_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 5_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 5_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 6_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 6_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 7_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 7_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 8_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 8_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 9_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die One Side 9_\344\277\256\345\244\215.mat.meta"
+ D "Client-Dice/Assets/DemoB/Generated/Die Outline_\344\277\256\345\244\215.mat"
+ D "Client-Dice/Assets/DemoB/Generated/Die Outline_\344\277\256\345\244\215.mat.meta"
+ D Client-Dice/Assets/Editor/DemoA.meta
+ D Client-Dice/Assets/Editor/DemoA/DemoA.Editor.asmdef
+ D Client-Dice/Assets/Editor/DemoA/DemoA.Editor.asmdef.meta
+ D Client-Dice/Assets/Editor/DemoA/DemoABuild.cs
+ D Client-Dice/Assets/Editor/DemoA/DemoABuild.cs.meta
+ D Client-Dice/Assets/Editor/DemoB.meta
+ D Client-Dice/Assets/Editor/DemoB/DemoB.Editor.asmdef
+ D Client-Dice/Assets/Editor/DemoB/DemoB.Editor.asmdef.meta
+ D Client-Dice/Assets/Editor/DemoB/DemoBBuild.cs
+ D Client-Dice/Assets/Editor/DemoB/DemoBBuild.cs.meta
+ D Client-Dice/Assets/Editor/DemoC.meta
+ D Client-Dice/Assets/Editor/DemoC/DemoC.Editor.asmdef
+ D Client-Dice/Assets/Editor/DemoC/DemoC.Editor.asmdef.meta
+ D Client-Dice/Assets/Editor/DemoC/DemoCBuild.cs
+ D Client-Dice/Assets/Editor/DemoC/DemoCBuild.cs.meta
+ M Client-Dice/Assets/Editor/M1Build.cs
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Mage_Healing.png
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Mage_Healing.png.meta
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Warrior_Fury.png
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Warrior_Fury.png.meta
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Warrior_Shield.png
+ D Client-Dice/Assets/Resources/BattleM1/Dice_Full_Warrior_Shield.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_1.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_1.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_2.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_2.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_3.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_3.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_4.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_4.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_5.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_5.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_6.png
+ D Client-Dice/Assets/Resources/DiceDemo/Dice_Full_6.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Main_Menu_Background_01.png
+ D Client-Dice/Assets/Resources/DiceDemo/Main_Menu_Background_01.png.meta
+ D Client-Dice/Assets/Resources/DiceDemo/Rune_Dice_Logo_01.png
+ D Client-Dice/Assets/Resources/DiceDemo/Rune_Dice_Logo_01.png.meta
+ D Client-Dice/Assets/Scenes/BattleM1.m1.0.0-backup.unity
+ D Client-Dice/Assets/Scenes/BattleM1.m1.0.0-backup.unity.meta
+ D Client-Dice/Assets/Scenes/DeskDemoA.unity
+ D Client-Dice/Assets/Scenes/DeskDemoA.unity.meta
+ D Client-Dice/Assets/Scenes/DiceDemoB.unity
+ D Client-Dice/Assets/Scenes/DiceDemoB.unity.meta
+ D Client-Dice/Assets/Scenes/DiceDemoC.unity
+ D Client-Dice/Assets/Scenes/DiceDemoC.unity.meta
+ D Client-Dice/Assets/Scenes/DiceMergeDemo.unity
+ D Client-Dice/Assets/Scenes/DiceMergeDemo.unity.meta
+ D Client-Dice/Assets/Scripts/DiceMergeGame.cs
+ D Client-Dice/Assets/Scripts/DiceMergeGame.cs.meta
+ M Client-Dice/Assets/Scripts/Runtime/Gameplay/BattleFlow.cs
+ D Client-Dice/Assets/Tests/DemoA.meta
+ D Client-Dice/Assets/Tests/DemoA/DemoA.Tests.asmdef
+ D Client-Dice/Assets/Tests/DemoA/DemoA.Tests.asmdef.meta
+ D Client-Dice/Assets/Tests/DemoA/DemoADeskTests.cs
+ D Client-Dice/Assets/Tests/DemoA/DemoADeskTests.cs.meta
+ D Client-Dice/Assets/Tests/DemoB.meta
+ D Client-Dice/Assets/Tests/DemoB/DemoB.Tests.asmdef
+ D Client-Dice/Assets/Tests/DemoB/DemoB.Tests.asmdef.meta
+ D Client-Dice/Assets/Tests/DemoB/DemoBDiceTests.cs
+ D Client-Dice/Assets/Tests/DemoB/DemoBDiceTests.cs.meta
+ D Client-Dice/Assets/Tests/DemoC.meta
+ D Client-Dice/Assets/Tests/DemoC/DemoC.Tests.asmdef
+ D Client-Dice/Assets/Tests/DemoC/DemoC.Tests.asmdef.meta
+ D Client-Dice/Assets/Tests/DemoC/DemoCDiceTests.cs
+ D Client-Dice/Assets/Tests/DemoC/DemoCDiceTests.cs.meta
+?? Client-Dice/Assets/Editor/FR2Editor.meta
+?? Client-Dice/Assets/Editor/FR2Editor/
+?? Client-Dice/Assets/Editor/WeixinMiniGameBuild.cs
+?? Client-Dice/Assets/Editor/WeixinMiniGameBuild.cs.meta
+?? Client-Dice/Assets/FR2_Cache.asset
+?? Client-Dice/Assets/FR2_Cache.asset.meta
+?? Client-Dice/Assets/Scripts/Runtime/Input.meta
+?? Client-Dice/Assets/Scripts/Runtime/Input/
+
+== deleted bytes total = 369263

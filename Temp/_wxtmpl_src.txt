@@ -1,0 +1,22 @@
+﻿=== wx-editor.dll (size 282112) ===
+  [needle] WXTemplate2022TJ ascii=0 unicode=0
+  [needle] WXTemplate ascii=0 unicode=0
+  [needle] WechatBuildPreprocess ascii=0 unicode=0
+  [needle] weixinMiniGameTemplate ascii=0 unicode=0
+=== SDK package files containing 'WXTemplate2022TJ' (path match) ===
+  \WebGLTemplates\WXTemplate2022TJ.meta
+  \WebGLTemplates\WXTemplate2022TJ\index.html
+  \WebGLTemplates\WXTemplate2022TJ\index.html.meta
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData.meta
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\favicon.ico
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\favicon.ico.meta
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\fullscreen-button.png
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\fullscreen-button.png.meta
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\MemoryProfiler.png
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\MemoryProfiler.png.meta
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\progress-bar-empty-dark.png
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\progress-bar-empty-dark.png.meta
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\progress-bar-empty-light.png
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\progress-bar-empty-light.png.meta
+  \WebGLTemplates\WXTemplate2022TJ\TemplateData\progress-bar-full-dark.png
+done

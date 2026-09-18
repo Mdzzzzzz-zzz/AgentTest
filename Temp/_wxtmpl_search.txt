@@ -1,0 +1,14 @@
+﻿=== UnityEditor.WeixinMiniGame.Extensions.dll ===
+  [needle] WXTemplate2022TJ ascii=0 unicode=0
+  [needle] WXTemplate2020 ascii=0 unicode=0
+  [needle] WXTemplate2022 ascii=0 unicode=0
+  [needle] WXTemplate ascii=0 unicode=0
+  [needle] WebGLTemplates ascii=0 unicode=1
+=== WeixinMiniGamePlayerBuildProgram.exe ===
+  [needle] WXTemplate2022TJ ascii=0 unicode=0
+  [needle] WXTemplate2020 ascii=0 unicode=0
+  [needle] WXTemplate2022 ascii=0 unicode=0
+  [needle] WXTemplate ascii=0 unicode=0
+  [needle] WebGLTemplates ascii=0 unicode=0
+=== module Managed/*.dll scan for WXTemplate / WebGLTemplates ===
+done

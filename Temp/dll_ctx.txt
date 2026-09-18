@@ -1,0 +1,23 @@
+===== wx-runtime.dll =====
+  [AssetBundle] DownloadHandlerWXAssetBundle | get_isStreamedSceneAssetBundle | GetAssetBundle | WXAssetBundleCallBack | UnloadAllAssetBundles | AssetBundleExtensions | WXAssetBundleRequest | 5WeChatWASM.WXAssetBundleRequest+WXAssetBundleCallBack
+  [AudioSource] GetAvailableAudioSourcesCallback | GetAvailableAudioSourcesOption | GetAvailableAudioSources | GetAvailableAudioSourcesSuccessCallbackResult
+  [AudioClip] (none)
+  [Microphone] muteMicrophone
+  [Canvas] sharedCanvasMode | CanvasType | WXCanvas | WXSharedCanvas | OffScreenCanvas
+  [Font] GetFontData | WXGetFontRawData | GetFontResponse | HandleGetFontRawDataCallback | WXGetFontCallback | GetFontParam | WXShareFontBuffer | WXFont | LoadFont
+  [ParticleSystem] (none)
+  [VideoPlayer] (none)
+  [Terrain] (none)
+  [NavMesh] (none)
+
+===== Unity.FontABTool.dll =====
+  [AssetBundle] AssetBundle | m_AssetBundleName | m_IsStreamedSceneAssetBundle
+  [AudioSource] (none)
+  [AudioClip] (none)
+  [Microphone] (none)
+  [Canvas] (none)
+  [Font] LoadFont | m_FontSize | m_FontData | m_FontNames | m_FallbackFonts | PPtr<Font> | m_FontRenderingMode | Font Texture | Font Material | PacKFontAB | Unity.FontABTool.dll | Unity.FontABTool | UnityFontABTool | UnityFontABTool | C:\WorkSpace\VSProjects\UnityFontABTool\UnityFontABTool\bin\Release\Dotfuscated\Unity.FontABTool.pdb
+  [ParticleSystem] (none)
+  [VideoPlayer] (none)
+  [Terrain] (none)
+  [NavMesh] (none)

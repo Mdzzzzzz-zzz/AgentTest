@@ -1,0 +1,7 @@
+﻿hitCount=6
+D:\NewOne\Client-Dice\Assets\Editor\DemoA\DemoABuild.cs:15: private const string ScenePath = "Assets/Scenes/DeskDemoA.unity";
+D:\NewOne\Client-Dice\Assets\Editor\DemoA\DemoABuild.cs:27: scene.name = "DeskDemoA";
+D:\NewOne\Client-Dice\Assets\Editor\DemoC\DemoCBuild.cs:16: private const string ScenePath = "Assets/Scenes/DiceDemoC.unity";
+D:\NewOne\Client-Dice\Assets\Editor\DemoC\DemoCBuild.cs:40: scene.name = "DiceDemoC";
+D:\NewOne\Client-Dice\Assets\Editor\DemoC\DemoCBuild.cs:78: output = Path.GetFullPath(Path.Combine(Application.dataPath, "../Builds/Demo-C/Windows/RuneDiceDemoC.exe"));
+D:\NewOne\Client-Dice\Assets\Editor\M1Build.cs:17: private const string SourceScenePath = "Assets/Scenes/DiceDemoC.unity";

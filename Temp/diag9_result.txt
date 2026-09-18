@@ -1,0 +1,29 @@
+decompressed asset stream = 2873556 bytes; SerializedFiles=6
+
+idx | name | occurrences | SerializedFile | offset
+  HIT  | Die Border 1_阶段丙修复 | x1 | sharedassets0.assets | 1680368
+  HIT  | Die Border 2_阶段丙修复 | x1 | sharedassets0.assets | 1681296
+  HIT  | Die Border 3_阶段丙修复 | x1 | sharedassets0.assets | 1682224
+  HIT  | Die Border 4_阶段丙修复 | x1 | sharedassets0.assets | 1683152
+  HIT  | Die Border 5_阶段丙修复 | x1 | sharedassets0.assets | 1684080
+  HIT  | Die Border 6_阶段丙修复 | x1 | sharedassets0.assets | 1685008
+  HIT  | Die Border 7_阶段丙修复 | x1 | sharedassets0.assets | 1685936
+  HIT  | Die Border 8_阶段丙修复 | x1 | sharedassets0.assets | 1686864
+  HIT  | Die Border 9_阶段丙修复 | x1 | sharedassets0.assets | 1687792
+  HIT  | Die One Side 1_阶段丙修复 | x1 | sharedassets0.assets | 1688720
+  HIT  | Die One Side 2_阶段丙修复 | x1 | sharedassets0.assets | 1689648
+  HIT  | Die One Side 3_阶段丙修复 | x1 | sharedassets0.assets | 1690576
+  HIT  | Die One Side 4_阶段丙修复 | x1 | sharedassets0.assets | 1691504
+  HIT  | Die One Side 5_阶段丙修复 | x1 | sharedassets0.assets | 1692432
+  HIT  | Die One Side 6_阶段丙修复 | x1 | sharedassets0.assets | 1693360
+  HIT  | Die One Side 7_阶段丙修复 | x1 | sharedassets0.assets | 1694288
+  HIT  | Die One Side 8_阶段丙修复 | x1 | sharedassets0.assets | 1695216
+  HIT  | Die One Side 9_阶段丙修复 | x1 | sharedassets0.assets | 1696144
+  HIT  | Die Outline_阶段丙修复 | x1 | sharedassets0.assets | 1697072
+
+FINAL: 19 / 19 material names present in decompressed data.tj3d asset stream
+
+--- 3 sample context fragments ---
+  [Die Border 1_阶段丙修复]  ...............Die Border 1_...................(..........
+  [Die Border 2_阶段丙修复]  ...............Die Border 2_...................(..........
+  [Die Outline_阶段丙修复]  ......?........Die Outline_....................).........

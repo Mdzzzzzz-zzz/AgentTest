@@ -1,0 +1,69 @@
+=== TUANJIE PROCS (WMI) ===
+PID=38408 PPID=27908
+  CMD="D:\Tools\Tuanjie\hub\tuanjie.exe"
+  CREATED=09/14/2026 10:33:04
+PID=91404 PPID=38408
+  CMD=
+  CREATED=09/16/2026 09:58:31
+=== ALL TUANJIE-RELATED PROCS ===
+10924  PPID=12500  Unity Hub.exe
+11496  PPID=10924  Unity Hub.exe
+13084  PPID=10924  Unity Hub.exe
+5420  PPID=10924  Unity Hub.exe
+30740  PPID=10924  Unity.Licensing.Client.exe
+32756  PPID=10924  Unity Hub.exe
+32892  PPID=10924  Unity Hub.exe
+36152  PPID=35640  Unity.Licensing.Client.exe
+38408  PPID=27908  tuanjie.exe
+46112  PPID=38408  Tuanjie.Licensing.Client.exe
+29336  PPID=10924  Unity.exe
+30668  PPID=29336  UnityCrashHandler64.exe
+51144  PPID=29336  UnityPackageManager.exe
+50880  PPID=29336  Unity.ILPP.Runner.exe
+50248  PPID=29336  UnityAutoQuitter.exe
+3996  PPID=29336  UnityShaderCompiler.exe
+48256  PPID=29336  Unity.exe
+52904  PPID=29336  UnityAutoQuitter.exe
+6932  PPID=29336  Unity.exe
+53240  PPID=29336  UnityAutoQuitter.exe
+40756  PPID=6932  UnityCrashHandler64.exe
+41456  PPID=48256  UnityCrashHandler64.exe
+40168  PPID=6932  UnityShaderCompiler.exe
+44092  PPID=48256  UnityShaderCompiler.exe
+83360  PPID=29336  UnityShaderCompiler.exe
+83524  PPID=29336  UnityShaderCompiler.exe
+73496  PPID=29336  UnityShaderCompiler.exe
+91404  PPID=38408  tuanjie.exe
+47400  PPID=10924  Unity.exe
+35276  PPID=47400  UnityCrashHandler64.exe
+37720  PPID=47400  UnityPackageManager.exe
+79256  PPID=47400  Unity.ILPP.Runner.exe
+44872  PPID=47400  UnityAutoQuitter.exe
+68164  PPID=47400  UnityShaderCompiler.exe
+28508  PPID=47400  Unity.exe
+47816  PPID=47400  UnityAutoQuitter.exe
+63600  PPID=28508  UnityCrashHandler64.exe
+68160  PPID=47400  Unity.exe
+37240  PPID=47400  UnityAutoQuitter.exe
+20680  PPID=68160  UnityCrashHandler64.exe
+91964  PPID=68160  UnityShaderCompiler.exe
+78452  PPID=28508  UnityShaderCompiler.exe
+38436  PPID=47400  UnityShaderCompiler.exe
+71812  PPID=47400  UnityShaderCompiler.exe
+15376  PPID=47400  UnityShaderCompiler.exe
+71492  PPID=47400  UnityShaderCompiler.exe
+91308  PPID=47400  UnityShaderCompiler.exe
+91868  PPID=47400  UnityShaderCompiler.exe
+85520  PPID=47400  UnityShaderCompiler.exe
+13696  PPID=47400  UnityShaderCompiler.exe
+90184  PPID=47400  UnityShaderCompiler.exe
+52012  PPID=18464  mcp-for-unity.exe
+6372  PPID=87156  mcp-for-unity.exe
+=== LOCK FILE ===
+UnityLockfile_Exists=False
+=== SERVER-PID / EDITOR LOCK HINTS in Temp ===
+=== BUILDS TREE (1 level) ===
+  d----- Demo-A  MTIME=2026-09-10T20:21:51.3913440+08:00
+  d----- Demo-B  MTIME=2026-09-10T23:27:07.6974494+08:00
+  d----- Demo-C  MTIME=2026-09-11T10:56:07.6141770+08:00
+  d----- M1  MTIME=2026-09-10T18:21:50.7648702+08:00

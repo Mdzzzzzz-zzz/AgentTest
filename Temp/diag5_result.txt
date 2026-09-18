@@ -1,0 +1,25 @@
+--- plaintext search INSIDE data.tj3d (518837 bytes) ---
+  0	Assets/
+  0	.mat
+  0	DemoC/Generated
+  0	DemoC
+  1	阶段丙修复
+  1	阶段丙
+  1	Die Border 1_阶段丙修复
+  0	Assets/DemoC
+  0	Assets/DemoA
+  0	Assets/DemoB
+  0	CAB-
+  1	Splash Screen
+  1	Gamepads_Sprite_Atlas_01
+  0	RuntimeInitializeOnLoads
+  0	SerializedFile
+  0	tuanjie_default_resources
+
+contexts of "Assets/" (total 0):
+
+contexts of "阶段丙修复":
+  @196909  ....H..OFill.....(.....T...Die Border 1_...............`$......$.......0....0...
+
+--- brute-force LZ4 blocksInfo (offsets 0..600, cbi sizes 200..320) ---
+  no LZ4 candidate found in 0..600 (bundle content encrypted or non-LZ4)

@@ -1,0 +1,21 @@
+   911052  D:\NewOne\Client-Dice\Builds\WxMiniGame\Build\WxMiniGame.data.br
+    64581  D:\NewOne\Client-Dice\Builds\WxMiniGame\Build\WxMiniGame.framework.js.br
+    20794  D:\NewOne\Client-Dice\Builds\WxMiniGame\Build\WxMiniGame.loader.js
+  3054751  D:\NewOne\Client-Dice\Builds\WxMiniGame\Build\WxMiniGame.wasm.br
+     4979  D:\NewOne\Client-Dice\Builds\WxMiniGame\index.html
+     2813  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\favicon.ico
+      175  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\fullscreen-button.png
+      665  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\MemoryProfiler.png
+       96  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\progress-bar-empty-dark.png
+      109  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\progress-bar-empty-light.png
+       74  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\progress-bar-full-dark.png
+       84  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\progress-bar-full-light.png
+     1468  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\style.css
+     4406  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\tuanjie-logo-dark.png
+     7834  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\tuanjie-logo-light.png
+     4579  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\webgl-logo.png
+     1670  D:\NewOne\Client-Dice\Builds\WxMiniGame\TemplateData\webmemd-icon.png
+
+TemplateData total = 23973 (12 files)
+GRAND TOTAL = 4080130 bytes
+Budget 4 MiB = 4194304 ; headroom = 114174 bytes (2.72%)

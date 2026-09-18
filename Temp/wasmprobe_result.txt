@@ -1,0 +1,28 @@
+wasm.br compressed   = 3054751 bytes (2.91 MiB)
+wasm decompressed    = 12765133 bytes (12.17 MiB)
+brotli ratio         = 4.18x
+magic hex            = 0061736d
+
+--- symbol probes in decompressed wasm ---
+  0	TestRunner
+  1	UnityEngine.TestTools
+  0	NUnit
+  0	test-framework
+  0	PlaymodeTestsController
+  0	TestResultRenderer
+  0	UnityEngine.TestRunner
+  0	AssemblyNameFilter
+  30	IL2CPP
+  49	il2cpp
+  17	UnityEngine.GameObject
+  60	UnityEngine.Physics
+  9	UnityEngine.Animation
+  1	UnityEngine.Video
+  0	UnityEngine.Terrain
+  1	UnityEngine.XR
+  1	UnityEngine.AI
+  1	UnityEngine.Networking
+  0	UnityEngine.ParticleSystem
+  0	UnityEngine.UI
+  1	UnityEngine.Audio
+  0	UnityEngine.VR

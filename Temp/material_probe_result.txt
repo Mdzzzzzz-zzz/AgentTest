@@ -1,0 +1,36 @@
+=== A1-ARTIFACT-01 material probe ===
+file: D:/NewOne/Client-Dice/Builds/WxMiniGame/Build/WxMiniGame.data.br
+compressed bytes   : 911052
+decompressed bytes : 2331071
+decompress error   : (none)
+header hex  : 5475616e6a696557656244617461312e3000f1000000f1000000b5ea070009000000646174612e746a3364a6eb07009a0000001d00000052756e74696d65496e
+header ascii: TuanjieWebData1.0.................data.tj3d............RuntimeIn
+
+--- 19 material strings ---
+HIT   utf8=1 utf16le=0  Die Border 1_阶段丙修复
+MISS  utf8=0 utf16le=0  Die Border 2_阶段丙修复
+MISS  utf8=0 utf16le=0  Die Border 3_阶段丙修复
+MISS  utf8=0 utf16le=0  Die Border 4_阶段丙修复
+MISS  utf8=0 utf16le=0  Die Border 5_阶段丙修复
+MISS  utf8=0 utf16le=0  Die Border 6_阶段丙修复
+MISS  utf8=0 utf16le=0  Die Border 7_阶段丙修复
+MISS  utf8=0 utf16le=0  Die Border 8_阶段丙修复
+MISS  utf8=0 utf16le=0  Die Border 9_阶段丙修复
+MISS  utf8=0 utf16le=0  Die One Side 1_阶段丙修复
+MISS  utf8=0 utf16le=0  Die One Side 2_阶段丙修复
+MISS  utf8=0 utf16le=0  Die One Side 3_阶段丙修复
+MISS  utf8=0 utf16le=0  Die One Side 4_阶段丙修复
+MISS  utf8=0 utf16le=0  Die One Side 5_阶段丙修复
+MISS  utf8=0 utf16le=0  Die One Side 6_阶段丙修复
+MISS  utf8=0 utf16le=0  Die One Side 7_阶段丙修复
+MISS  utf8=0 utf16le=0  Die One Side 8_阶段丙修复
+MISS  utf8=0 utf16le=0  Die One Side 9_阶段丙修复
+MISS  utf8=0 utf16le=0  Die Outline_阶段丙修复
+
+combined hits (any encoding): 1 / 19
+utf8 hits    : 1 / 19
+utf16le hits : 0 / 19
+
+occurrences of suffix "_阶段丙修复" (utf8)   : 1
+occurrences of suffix "_阶段丙修复" (utf16le): 0
+generic token counts: {"Die Border ":1,"Die One Side ":0,"Die Outline":0,"Die Border _utf16":0,"Die One Side _utf16":0}

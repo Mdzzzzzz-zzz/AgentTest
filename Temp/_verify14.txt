@@ -1,0 +1,23 @@
+﻿== root exists ==
+True
+== Assets/Scenes ==
+D:\NewOne\Client-Dice\Assets\Scenes\BattleM1.unity
+D:\NewOne\Client-Dice\Assets\Scenes\BattleM1.unity.meta
+== Assets/Tests ==
+D:\NewOne\Client-Dice\Assets\Tests\EditMode
+D:\NewOne\Client-Dice\Assets\Tests\Editor
+D:\NewOne\Client-Dice\Assets\Tests\EditMode.meta
+D:\NewOne\Client-Dice\Assets\Tests\Editor.meta
+D:\NewOne\Client-Dice\Assets\Tests\EditMode\BattleDomainTests.cs
+D:\NewOne\Client-Dice\Assets\Tests\EditMode\BattleDomainTests.cs.meta
+D:\NewOne\Client-Dice\Assets\Tests\EditMode\DiceDemo.M1.Tests.asmdef
+D:\NewOne\Client-Dice\Assets\Tests\EditMode\DiceDemo.M1.Tests.asmdef.meta
+== Assets top-level dirs ==
+DemoA
+DemoB
+DemoC
+Editor
+Resources
+Scenes
+Scripts
+Tests

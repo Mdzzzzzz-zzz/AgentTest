@@ -1,0 +1,165 @@
+﻿== ASCII: Subplatform / SubTarget / MiniGame context ==
+[A:MiniGameSubplatform] GetAllMiniGameSubplatformPackageId
+[A:MiniGameSubplatform] m_MiniGameSubplatformInterface
+[A:MiniGameSubplatform] AutoInstallMiniGameSubplatform
+[A:MiniGameSubplatform] MiniGameSubplatformManager
+[A:MiniGameSubplatform] 3MiniGameSubplatform
+[A:Subplatform] InstallSubplatformPackageAsync
+[A:Subplatform] GetAllMiniGameSubplatformPackageId
+[A:Subplatform] GetBuildInSubplatformPackageId
+[A:Subplatform] SubplatformConvertFailed
+[A:Subplatform] IsSubplatformPackageInstalled
+[A:Subplatform] IsSubplatformInstalled
+[A:Subplatform] CheckMinigameSubplatformSupported
+[A:Subplatform] m_MiniGameSubplatformInterface
+[A:Subplatform] miniGameSubplatformInterface
+[A:Subplatform] InstallSubplatformPackage
+[A:Subplatform] GetSubplatformName
+[A:Subplatform] GetMinigameSubplatformDisplayName
+[A:Subplatform] m_SubplatformInstallState
+[A:Subplatform] GetSubplatformInstallState
+[A:Subplatform] SetSubplatformInstallState
+[A:Subplatform] SetActiveSubplatformNoRefresh
+[A:Subplatform] AddDefaultSubplatformNoCheck
+[A:Subplatform] GetSubplatformLink
+[A:Subplatform] GetActiveSubplatformInternal
+[A:Subplatform] AddSubplatform
+[A:Subplatform] AutoInstallMiniGameSubplatform
+[A:Subplatform] ParseBundleTypeSubplatform
+[A:Subplatform] RemoveObsoleteSubplatform
+[A:Subplatform] CheckActiveSubplatform
+[A:Subplatform] GetActiveSubplatform
+[A:Subplatform] SetActiveSubplatform
+[A:Subplatform] activeSubplatform
+[A:Subplatform] InstallSubplatform
+[A:Subplatform] m_BuiltInSubplatform
+[A:Subplatform] IsBuiltInSubplatform
+[A:Subplatform] RegisterSubplatform
+[A:Subplatform] GetActiveSubplatformEnum
+[A:Subplatform] GetSubplatformTooltip
+[A:Subplatform] MiniGameSubplatformManager
+[A:Subplatform] GetSubplatformSettings
+[A:Subplatform] GetAllSupportedSubplatforms
+[A:Subplatform] SubplatformInstallStateReset
+[A:Subplatform] IsActiveSubplatformByDefault
+[A:Subplatform] BuildProfileSubplatformProxy
+[A:Subplatform] vSetActiveSubplatform
+[A:Subplatform] LCheckActiveSubplatform
+[A:Subplatform] 3MiniGameSubplatform
+[A:SubPlatform] ShowMiniGameSubPlatformsGUI
+[A:SubPlatform] m_SubPlatformsName
+[A:SubPlatform] isSubPlatformsFoldoutOpen
+[A:SubPlatform] ShowSubPlatformIcon
+[A:SubPlatform] ShowMiniGameSubPlatforms
+[A:GetSubplatformName] GetSubplatformName
+[A:RegisterSubplatform] RegisterSubplatform
+[A:Subtarget] SwitchActiveBuildTargetAndSubtargetAsync
+[A:Subtarget] GetMiniGameBuildSubtargetFromPackageId
+[A:Subtarget] GetMiniGameBuildSubtargetFromName
+[A:Subtarget] GetSubtargetName
+[A:Subtarget] GetSubtargetType
+[A:Subtarget] SwitchActiveBuildTargetAndSubtargetNoCheck
+[A:Subtarget] GetSelectedSubtargetFor
+[A:Subtarget] SetSelectedSubtargetFor
+[A:Subtarget] GetActiveSubtargetFor
+[A:Subtarget] m_StandaloneSubtargetStrings
+[A:Subtarget] WeixinMiniGameSlimTypeSubtargetStrings
+[A:Subtarget] m_StandaloneSubtargets
+[A:Subtarget] SetupStandaloneSubtargets
+[A:Subtarget] WeixinMiniGameSlimTypeSubtargets
+[A:Subtarget] textureSubtargetFormat
+[A:Subtarget] WSASubtarget
+[A:Subtarget] m_Subtarget
+[A:Subtarget] get_wsaSubtarget
+[A:Subtarget] set_wsaSubtarget
+[A:Subtarget] PS4BuildSubtarget
+[A:Subtarget] get_ps4BuildSubtarget
+[A:Subtarget] set_ps4BuildSubtarget
+[A:Subtarget] get_webGLBuildSubtarget
+[A:Subtarget] set_webGLBuildSubtarget
+[A:Subtarget] AndroidBuildSubtarget
+[A:Subtarget] get_androidBuildSubtarget
+[A:Subtarget] set_androidBuildSubtarget
+[A:Subtarget] get_weixinMiniGameBuildSubtarget
+[A:Subtarget] set_weixinMiniGameBuildSubtarget
+[A:Subtarget] get_miniGameBuildSubtarget
+[A:Subtarget] set_miniGameBuildSubtarget
+[A:Subtarget] get_selectedStandaloneBuildSubtarget
+[A:Subtarget] set_selectedStandaloneBuildSubtarget
+[A:Subtarget] get_standaloneBuildSubtarget
+[A:Subtarget] set_standaloneBuildSubtarget
+[A:Subtarget] XboxBuildSubtarget
+[A:Subtarget] get_xboxBuildSubtarget
+[A:Subtarget] set_xboxBuildSubtarget
+[A:Subtarget] get_openHarmonyBuildSubtarget
+[A:Subtarget] set_openHarmonyBuildSubtarget
+[A:Subtarget] buildSubtarget
+[A:Subtarget] SwitchActiveBuildTargetAndSubtarget
+[A:Subtarget] WebGLTextureSubtarget
+[A:Subtarget] MobileTextureSubtarget
+[A:Subtarget] ParseSubtarget
+[A:Subtarget] BuildPlatformWithSubtarget
+[A:Subtarget] GetBuiltInBuildProfileHelperFromSubtarget
+[A:Subtarget] GetBuildProfileHelperFromSubtarget
+[A:Subtarget] subplatformSubtarget
+[A:Subtarget] NoSubtarget
+[A:Subtarget] GetSubtarget
+[A:Subtarget] SetSubtarget
+[A:Subtarget] StandaloneBuildSubtarget.Server
+[A:Subtarget] wUnityEditor.AndroidBuildSubtarget
+[A:Subtarget] UnityEditor.MobileTextureSubtarget
+[A:Subtarget] UnityEditor.MobileTextureSubtarget.ATC
+[A:Subtarget] UnityEditor.MobileTextureSubtarget.ETC
+[A:Subtarget] GetSelectedStandaloneBuildSubtarget
+[A:Subtarget] SetSelectedStandaloneBuildSubtarget
+[A:Subtarget] GetActiveStandaloneBuildSubtarget
+[A:Subtarget] SetActiveStandaloneBuildSubtarget
+[A:Subtarget] GetSelectedPS4BuildSubtarget
+[A:Subtarget] SetSelectedPS4BuildSubtarget
+[A:Subtarget] GetSelectedXboxBuildSubtarget
+[A:Subtarget] SetSelectedXboxBuildSubtarget
+[A:Subtarget] GetSelectedAndroidBuildTextureSubtarget
+[A:Subtarget] SetSelectedAndroidBuildSubtarget
+[A:Subtarget] GetSelectedOpenHarmonyBuildTextureSubtarget
+[A:Subtarget] SetSelectedOpenHarmonyBuildSubtarget
+[A:Subtarget] GetSelectedWebGLBuildTextureSubtarget
+[A:Subtarget] SetSelectedWebGLBuildSubtarget
+[A:Subtarget] .GetSelectedWeixinMiniGameBuildTextureSubtarget
+[A:Subtarget] SetSelectedWeixinMiniGameBuildSubtarget
+[A:Subtarget] EditorUserBuildSettings.standaloneBuildSubtarget
+[A:Subtarget] uEditorUserBuildSettings.wsaSubtarget
+[A:Subtarget] MiniGameBuildSubtarget
+
+== Unicode: Chinese 微信/小游戏 and WeChat context ==
+[U:微信小游戏] rSceneTreeViewᴀBuild Settings଀微信小游戏ᄁDev Host܀浏览器企BuildSettingsWin
+[U:微信] port wasm from the outsideᴀ是否为微信分包后的wasm ⤁Generate Wasm Report
+[U:微信] rSceneTreeViewᴀBuild Settings଀微信小游戏ᄁDev Host܀浏览器企BuildSettings
+[U:微信] 到的 WASM 首包信息迁移到本次分包结果中ᬁWeChat:微信试玩广告㴁WeChatWASM.UnityUtil,wx-e
+[U:微信] y!䌀请使用 v0.1.30 及以上版本的 WXSDK 构建微信试玩广告崁UIPackageResources/Images
+[U:微信] 糊匹配༁SDK功能选项༁使用好友关系链ഁ使用社交组件ᔁ预加载微信字体(?)弁在game.js执行开始时预载微信系统字体，运行
+[U:微信] 期间可使用WX.GetWXFont获取微信字体℁Profiling MemoryᴀWebGL2.0(b
+[U:小游戏] ceneTreeViewᴀBuild Settings଀微信小游戏ᄁDev Host܀浏览器企BuildSettingsWin
+[U:小游戏] oicon.pngऀ基本信息ᄁframeBox଀appidᔀ小游戏试玩AppIDᜁprojectNameᄀ小游戏试玩项目名ᜁo
+[U:小游戏] lete", "*"); };ऀ纯浏览器ᤁDouYin:抖音小游戏老條琀琀瀀猀㨀⼀⼀搀攀瘀攀氀漀瀀攀爀⸀漀瀀攀渀ⴀ搀漀甀礀椀渀
+[U:小游戏] -transform-sdk.gitᴀKuaiShou:快手小游戏䴁Confirm to Change KuaiShou to
+[U:小游戏] MinigameSDK.git⌀MetaApp233:233小游戏㔁https://doc.233leyuan.com/ᤀ点击
+[U:小游戏] 查看233小游戏文档儁Confirm to Change MetaApp23
+[U:小游戏] e MetaApp233 VersionᴀMiniHost:小游戏宿主嬁https://minihost.tuanjie.cn
+[U:小游戏] /help/docs/welcomeᬀ点击查看更多关于小游戏宿主愁https://github.com/taptap/m
+[U:小游戏] m_Developmentༀ游戏AppID༁游戏资源CDNഁ小游戏项目名ᬁLandscapeLeftᴀLandscapeRig
+[U:小游戏] 启动背景图/视频封面ጁ加载阶段视频URLᄁ首包资源加载方式ଁ小游戏包内ጁ压缩首包资源(?)老څ陜֙䑓邍䉮爀漀琀氀椀謀⥓Ɀ 䴀亖
+[U:小游戏] ie-transform-sdk.gitᤀXiaoMi:小米小游戏䤁Confirm to Change XiaoMi to v
+
+== ASCII: context around 'WeChat' (dedup) ==
+[A:WeChat] WeChatGroup0
+[A:WeChat] WeChatGroup11
+[A:WeChat] WeChatGroup16
+[A:WeChat] WeChatBuildProfile
+[A:WeChat] WeChatVersionGroup
+[A:WeChat] DefaultWeChatBuildProfileHelper
+[A:WeChat] DefaultWeChatAdsHelper
+[A:WeChat] DefaultWeChatMiniGameSettingsEditor
+[A:WeChat] DefaultWeChatAdsSettingsEditor
+[A:WeChat] DefaultWeChatMiniGameSettings
+[A:WeChat] DefaultWeChatAdsSettings
+[A:WeChat] WeChat

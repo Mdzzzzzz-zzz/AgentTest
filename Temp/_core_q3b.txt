@@ -1,0 +1,10 @@
+﻿[needle] WXTemplate2022TJ ascii=0 unicode=0
+[needle] WXTemplate ascii=0 unicode=0
+[needle] WebGLTemplates ascii=0 unicode=0
+[needle] com.qq.weixin.minigame ascii=0 unicode=1
+[needle] SetTemplatePath ascii=1 unicode=0
+[needle] weixinMiniGameTemplate ascii=0 unicode=0
+--- U context ---
+[U:com.qq] .Packages/manifest.json.椀渀椀.漀猀琀...伀..伀..com.qq.weixin.minigame偘愀挀欀愀最攀猀.挀漀洀.焀焀.眀攀椀砀椀渀.洀椀渀椀最愀洀攀.瀀愀挀欀愀最攀.樀猀漀渀
+--- A context ---
+[A:TemplatesFolder] .sourceAssembliesFolder.librariesFolder.get_customTemplatesFolder.get_builtinTemplatesFolder.get_isFolder.GetFrameW

@@ -1,0 +1,210 @@
+{
+  "decompressedBytes": 2873556,
+  "serializedFiles": [
+    {
+      "off": 0,
+      "size": 33164,
+      "name": "globalgamemanagers"
+    },
+    {
+      "off": 33164,
+      "size": 354608,
+      "name": "Resources/tuanjie_builtin_extra"
+    },
+    {
+      "off": 387772,
+      "size": 1282520,
+      "name": "globalgamemanagers.assets"
+    },
+    {
+      "off": 1670292,
+      "size": 1110692,
+      "name": "sharedassets0.assets"
+    },
+    {
+      "off": 2780984,
+      "size": 83612,
+      "name": "level0"
+    },
+    {
+      "off": 2864596,
+      "size": 8960,
+      "name": "resources.assets"
+    }
+  ],
+  "materialProof": [
+    {
+      "name": "Die Border 1_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1680368
+      ],
+      "context": "............Die Border 1_...................(......."
+    },
+    {
+      "name": "Die Border 2_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1681296
+      ],
+      "context": "............Die Border 2_...................(......."
+    },
+    {
+      "name": "Die Border 3_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1682224
+      ],
+      "context": "............Die Border 3_...................(......."
+    },
+    {
+      "name": "Die Border 4_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1683152
+      ],
+      "context": "............Die Border 4_...................(......."
+    },
+    {
+      "name": "Die Border 5_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1684080
+      ],
+      "context": "............Die Border 5_...................(......."
+    },
+    {
+      "name": "Die Border 6_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1685008
+      ],
+      "context": "............Die Border 6_...................(......."
+    },
+    {
+      "name": "Die Border 7_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1685936
+      ],
+      "context": "............Die Border 7_...................(......."
+    },
+    {
+      "name": "Die Border 8_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1686864
+      ],
+      "context": "............Die Border 8_...................(......."
+    },
+    {
+      "name": "Die Border 9_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1687792
+      ],
+      "context": "............Die Border 9_...................(......."
+    },
+    {
+      "name": "Die One Side 1_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1688720
+      ],
+      "context": "............Die One Side 1_.....................(....."
+    },
+    {
+      "name": "Die One Side 2_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1689648
+      ],
+      "context": "...?........Die One Side 2_.....................(....."
+    },
+    {
+      "name": "Die One Side 3_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1690576
+      ],
+      "context": "...?........Die One Side 3_.....................(....."
+    },
+    {
+      "name": "Die One Side 4_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1691504
+      ],
+      "context": "...?........Die One Side 4_.....................(....."
+    },
+    {
+      "name": "Die One Side 5_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1692432
+      ],
+      "context": "...?........Die One Side 5_.....................(....."
+    },
+    {
+      "name": "Die One Side 6_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1693360
+      ],
+      "context": "...?........Die One Side 6_.....................(....."
+    },
+    {
+      "name": "Die One Side 7_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1694288
+      ],
+      "context": "...?........Die One Side 7_.....................(....."
+    },
+    {
+      "name": "Die One Side 8_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1695216
+      ],
+      "context": "...?........Die One Side 8_.....................(....."
+    },
+    {
+      "name": "Die One Side 9_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1696144
+      ],
+      "context": "...?........Die One Side 9_.....................(....."
+    },
+    {
+      "name": "Die Outline_阶段丙修复",
+      "occurrences": 1,
+      "serializedFile": "sharedassets0.assets",
+      "offsets": [
+        1697072
+      ],
+      "context": "...?........Die Outline_....................)......"
+    }
+  ],
+  "hits": 19,
+  "total": 19
+}

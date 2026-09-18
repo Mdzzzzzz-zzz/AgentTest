@@ -1,0 +1,10 @@
+﻿BattleM1.m1.0.0-backup.unity|2891
+BattleM1.m1.0.0-backup.unity.meta|179
+BattleM1.unity|322537
+BattleM1.unity.meta|155
+DeskDemoA.unity|233683
+DeskDemoA.unity.meta|179
+DiceDemoC.unity|321290
+DiceDemoC.unity.meta|179
+DiceMergeDemo.unity|2891
+DiceMergeDemo.unity.meta|152

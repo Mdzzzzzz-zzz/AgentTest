@@ -1,0 +1,12 @@
+total assemblies in player = 77
+
+non-UnityEngine assemblies (5):
+  DiceDemo.DemoB.dll
+  DiceDemo.DemoC.dll
+  DiceDemo.DemoA.dll
+  TJGenerators.Runtime.dll
+  DiceDemo.Runtime.dll
+
+engine module count = 70
+test/nunit related:
+  UnityEngine.UnityTestProtocolModule.dll

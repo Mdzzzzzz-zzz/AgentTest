@@ -1,0 +1,164 @@
+﻿== rev-parse (Client-Dice) ==
+D:/NewOne
+
+== status --short (full) ==
+ D Assets/DemoB/Generated.meta
+ D "Assets/DemoB/Generated/Die Border 1_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 1_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 2_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 2_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 3_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 3_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 4_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 4_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 5_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 5_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 6_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 6_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 7_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 7_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 8_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 8_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 9_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 9_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 1_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 1_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 2_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 2_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 3_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 3_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 4_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 4_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 5_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 5_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 6_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 6_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 7_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 7_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 8_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 8_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 9_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 9_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Outline_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Outline_\344\277\256\345\244\215.mat.meta"
+ D Assets/Scenes/BattleM1.m1.0.0-backup.unity
+ D Assets/Scenes/BattleM1.m1.0.0-backup.unity.meta
+ D Assets/Scenes/DeskDemoA.unity
+ D Assets/Scenes/DeskDemoA.unity.meta
+ D Assets/Scenes/DiceDemoB.unity
+ D Assets/Scenes/DiceDemoB.unity.meta
+ D Assets/Scenes/DiceDemoC.unity
+ D Assets/Scenes/DiceDemoC.unity.meta
+ D Assets/Scenes/DiceMergeDemo.unity
+ D Assets/Scenes/DiceMergeDemo.unity.meta
+ D Assets/Scripts/DiceMergeGame.cs
+ D Assets/Scripts/DiceMergeGame.cs.meta
+ M Assets/Scripts/Runtime/Gameplay/BattleFlow.cs
+ D Assets/Tests/DemoA.meta
+ D Assets/Tests/DemoA/DemoA.Tests.asmdef
+ D Assets/Tests/DemoA/DemoA.Tests.asmdef.meta
+ D Assets/Tests/DemoA/DemoADeskTests.cs
+ D Assets/Tests/DemoA/DemoADeskTests.cs.meta
+ D Assets/Tests/DemoC.meta
+ D Assets/Tests/DemoC/DemoC.Tests.asmdef
+ D Assets/Tests/DemoC/DemoC.Tests.asmdef.meta
+ D Assets/Tests/DemoC/DemoCDiceTests.cs
+ D Assets/Tests/DemoC/DemoCDiceTests.cs.meta
+ M ProjectSettings/EditorBuildSettings.asset
+?? ../.workbuddy/
+?? Assets/Editor/FR2Editor.meta
+?? Assets/Editor/FR2Editor/
+?? Assets/Editor/WeixinMiniGameBuild.cs
+?? Assets/Editor/WeixinMiniGameBuild.cs.meta
+?? Assets/FR2_Cache.asset
+?? Assets/FR2_Cache.asset.meta
+?? Assets/Scripts/Runtime/Input.meta
+?? Assets/Scripts/Runtime/Input/
+?? Docs/Platform/
+?? ../Temp/Backup-SpikeA-20260915/
+?? ../Temp/_ctxdefs.py
+?? ../Temp/_guid.py
+?? ../Temp/_guid2.py
+?? ../Temp/_guid3.py
+?? ../Temp/_guid4.py
+?? ../Temp/_guid5.py
+?? ../Temp/_ps_del2.txt
+?? ../Temp/_ps_diag2.txt
+?? ../Temp/_ps_err.txt
+?? ../Temp/_ps_probe.txt
+?? ../Temp/_ps_state.txt
+?? ../Temp/_ps_tests.txt
+?? ../Temp/_scandefs.py
+?? ../Temp/_scene_census.py
+?? ../Temp/_scene_mats.py
+?? ../Temp/_zoom.py
+?? ../Temp/_zoom/
+?? ../_f28_probe.txt
+?? ../_recon_sizes.txt
+?? ../_recon_tmp.txt
+
+== status --short -- Assets/Scenes Assets/Tests ==
+ D Assets/Scenes/BattleM1.m1.0.0-backup.unity
+ D Assets/Scenes/BattleM1.m1.0.0-backup.unity.meta
+ D Assets/Scenes/DeskDemoA.unity
+ D Assets/Scenes/DeskDemoA.unity.meta
+ D Assets/Scenes/DiceDemoB.unity
+ D Assets/Scenes/DiceDemoB.unity.meta
+ D Assets/Scenes/DiceDemoC.unity
+ D Assets/Scenes/DiceDemoC.unity.meta
+ D Assets/Scenes/DiceMergeDemo.unity
+ D Assets/Scenes/DiceMergeDemo.unity.meta
+ D Assets/Tests/DemoA.meta
+ D Assets/Tests/DemoA/DemoA.Tests.asmdef
+ D Assets/Tests/DemoA/DemoA.Tests.asmdef.meta
+ D Assets/Tests/DemoA/DemoADeskTests.cs
+ D Assets/Tests/DemoA/DemoADeskTests.cs.meta
+ D Assets/Tests/DemoC.meta
+ D Assets/Tests/DemoC/DemoC.Tests.asmdef
+ D Assets/Tests/DemoC/DemoC.Tests.asmdef.meta
+ D Assets/Tests/DemoC/DemoCDiceTests.cs
+ D Assets/Tests/DemoC/DemoCDiceTests.cs.meta
+
+== status --short -- Assets/DemoA DemoB DemoC ==
+ D Assets/DemoB/Generated.meta
+ D "Assets/DemoB/Generated/Die Border 1_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 1_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 2_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 2_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 3_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 3_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 4_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 4_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 5_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 5_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 6_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 6_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 7_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 7_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 8_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 8_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Border 9_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Border 9_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 1_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 1_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 2_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 2_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 3_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 3_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 4_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 4_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 5_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 5_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 6_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 6_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 7_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 7_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 8_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 8_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die One Side 9_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die One Side 9_\344\277\256\345\244\215.mat.meta"
+ D "Assets/DemoB/Generated/Die Outline_\344\277\256\345\244\215.mat"
+ D "Assets/DemoB/Generated/Die Outline_\344\277\256\345\244\215.mat.meta"
+
+== git -C D:/NewOne status --short -- Assets/Scenes Assets/Tests ==
+

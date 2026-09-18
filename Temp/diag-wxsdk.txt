@@ -1,0 +1,81 @@
+=== Assets top-level ===
+  [D] DemoA
+  [F] DemoA.meta
+  [D] DemoB
+  [F] DemoB.meta
+  [D] DemoC
+  [F] DemoC.meta
+  [D] Editor
+  [F] Editor.meta
+  [F] FR2_Cache.asset
+  [F] FR2_Cache.asset.meta
+  [D] Resources
+  [F] Resources.meta
+  [D] Scenes
+  [F] Scenes.meta
+  [D] Scripts
+  [F] Scripts.meta
+  [D] Settings
+  [F] Settings.meta
+  [D] Tests
+  [F] Tests.meta
+=== Has WebGLTemplates? False   Has WX-WASM-SDK-V2? False   Has WX-WASM-SDK? False
+=== PKG root ===
+  [F] CHANGELOG.md
+  [F] CHANGELOG.md.meta
+  [D] Editor
+  [F] Editor.meta
+  [F] LICENSE
+  [F] LICENSE.meta
+  [F] mainifest.json
+  [F] mainifest.json.meta
+  [F] package.json
+  [F] package.json.meta
+  [F] README.md
+  [F] README.md.meta
+  [D] Runtime
+  [F] Runtime.meta
+  [D] WebGLTemplates
+  [F] WebGLTemplates.meta
+=== PKG Editor/ ===
+  Brotli
+  Brotli.meta
+  BuildProfile
+  BuildProfile.meta
+  convert.exe
+  convert.exe.meta
+  LuaHooker
+  LuaHooker.meta
+  MiniGameConfig.asset
+  MiniGameConfig.asset.meta
+  Node
+  Node.meta
+  PicCompressor.cs
+  PicCompressor.cs.meta
+  Playable
+  Playable.meta
+  TextureEditor
+  TextureEditor.meta
+  WXAssetPostprocessor.cs
+  WXAssetPostprocessor.cs.meta
+  WXConvertCore.cs
+  WXConvertCore.cs.meta
+  wx-editor.dll
+  wx-editor.dll.meta
+  wx-editor.xml
+  wx-editor.xml.meta
+  WXEditorSettingHelper.cs
+  WXEditorSettingHelper.cs.meta
+  WXEditorWindow.cs
+  WXEditorWindow.cs.meta
+  WXExtDef.cs
+  WXExtDef.cs.meta
+  WXMultiPackageMergeWindow.cs
+  WXMultiPackageMergeWindow.cs.meta
+  WXPluginVersion.cs
+  WXPluginVersion.cs.meta
+  WxWasmSDKEditor.asmdef
+  WxWasmSDKEditor.asmdef.meta
+=== asmdef list in PKG ===
+  \Editor\WxWasmSDKEditor.asmdef
+  \Runtime\WxWasmSDKRuntime.asmdef

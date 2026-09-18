@@ -1,0 +1,86 @@
+=== Editor.log lines 900-960 ===
+L900: "Assets/Scripts/Runtime/Gameplay/BattleDie.cs"
+L901: "Assets/Scripts/Runtime/Gameplay/BattleFlow.cs"
+L902: "Assets/Scripts/Runtime/Gameplay/DiceMergeService.cs"
+L903: "Assets/Scripts/Runtime/Input/DesktopAppLifecycle.cs"
+L904: "Assets/Scripts/Runtime/Input/DesktopInputSource.cs"
+L905: "Assets/Scripts/Runtime/Input/IAppLifecycle.cs"
+L906: "Assets/Scripts/Runtime/Input/IInputSource.cs"
+L907: "Assets/Scripts/Runtime/Input/MiniGameAppLifecycle.cs"
+L908: "Assets/Scripts/Runtime/Input/TouchInputSource.cs"
+L909: -langversion:9.0
+L910: /deterministic
+L911: /optimize+
+L912: /debug:portable
+L913: /nologo
+L914: /RuntimeMetadataVersion:v4.0.30319
+L915: /nowarn:0169
+L916: /nowarn:0649
+L917: /nowarn:0282
+L918: /nowarn:1701
+L919: /nowarn:1702
+L920: /utf8output
+L921: /preferreduilang:en-US
+L922: /additionalfile:"Library/Bee/artifacts/1900b0aE.dag/DiceDemo.Runtime.UnityAdditionalFile.txt"
+L923: ##### Custom Environment Variables
+L924: DOTNET_MULTILEVEL_LOOKUP=0
+L925: ##### ExitCode
+L926: 1
+L927: ##### Output
+L928: error CS2001: Source file 'D:\NewOne\Client-Dice\Assets/Scripts/DiceMergeGame.cs' could not be found.
+L929: *** Tundra requires additional run (0.71 seconds), 1 items updated, 307 evaluated
+L930: Starting: C:\Program Files\Tuanjie\Hub\Editor\2022.3.62t14\Editor\Data\Tools\netcorerun\netcorerun.exe "C:\Program Files\Tuanjie\Hub\Editor\2022.3.62t14\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+L931: WorkingDir: D:/NewOne/Client-Dice
+L932: ExitCode: 0 Duration: 0s538ms
+L933: Starting: C:\Program Files\Tuanjie\Hub\Editor\2022.3.62t14\Editor\Data\bee_backend.exe --dont-print-to-structured-log --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+L934: WorkingDir: D:/NewOne/Client-Dice
+L935: ExitCode: 0 Duration: 1s476ms
+L936: Finished compiling graph: 320 nodes, 3703 flattened edges (3399 ToBuild, 50 ToUse), maximum node priority 192
+L937: [212/317    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/DiceDemo.Runtime.rsp
+L938: [308/317    0s] Csc Library/Bee/artifacts/1900b0aE.dag/DiceDemo.Runtime.dll (+2 others)
+L939: Assets\Scripts\Runtime\Gameplay\BattleFlow.cs(29,45): warning CS0414: The field 'BattleFlow._debugGold' is assigned but its value is never used
+L940: [309/317    0s] CopyFiles Library/ScriptAssemblies/DiceDemo.Runtime.pdb
+L941: [310/317    0s] CopyFiles Library/ScriptAssemblies/DiceDemo.Runtime.dll
+L942: [311/317    0s] Csc Library/Bee/artifacts/1900b0aE.dag/DiceDemo.M1.Tests.dll (+2 others)
+L943: [312/317    0s] Csc Library/Bee/artifacts/1900b0aE.dag/DiceDemo.M1.Editor.dll (+2 others)
+L944: [313/317    0s] CopyFiles Library/ScriptAssemblies/DiceDemo.M1.Tests.pdb
+L945: [314/317    0s] CopyFiles Library/ScriptAssemblies/DiceDemo.M1.Tests.dll
+L946: [315/317    0s] CopyFiles Library/ScriptAssemblies/DiceDemo.M1.Editor.pdb
+L947: [316/317    0s] CopyFiles Library/ScriptAssemblies/DiceDemo.M1.Editor.dll
+L948: *** Tundra build success (1.45 seconds), 10 items updated, 317 evaluated
+L949: Assets\Scripts\Runtime\Gameplay\BattleFlow.cs(29,45): warning CS0414: The field 'BattleFlow._debugGold' is assigned but its value is never used
+L950: Reloading assemblies after forced synchronous recompile.
+L951: Begin MonoManager ReloadAssembly
+L952: [NWB-WebRTC] SendDataChannelMessage rejected: dataChannel=null len=24
+L953: [Licensing::Client] Successfully send message: {"AuthorizationCheck":"Yq4yOFVaSlVVwQ==","messageType":"EntitlementDetailsRequest","entitlementIds":["com.unity.editor.headless","com.unity.editor.ui"],"packageEntitlementIds":[],"includeCustomData":false} at 1789548032
+L954: [Licensing::Client] Successfully receive message: {"entitlementGroups":[{"entitlementGroupId":"F4-AGDB-QRN4-X3UU-7KXH-P4RQ","entitlementGroupIdHash":"33d25efdcaaa32aa544bad3a9533f164d8bf246e","productName":"Unity Personal","productType":"TuanjieEditor","licenseType":"ULF","expiration":1789983532000,"matchedEntitlements":[{"entitlementId":"com.unity.editor.ui","isPackage":false,"count":1},{"entitlementId":"com.unity.editor.headless","isPackage":false,"count":1}]}],"responseCode":200,"responseStatus":"Found 1 entitlement groups and 0 free entitlements matching requested entitlement ids","messageType":"EntitlementDetailsResponse","authorizationCheck":"Yq4yOFVaSlVVwUcGZ9OlDpVRYofd"} at 1789548032
+L955: [Licensing::Client] Attempt to check time stamp (startTime: 1789548032, endTime: 1789548032)
+L956: [Licensing::Client] Successfully resolved entitlement details
+L957: [websockify wrapper] OnUnload
+L958: [websockify wrapper] Process killed
+L959: Total cache size 171570811
+L960: Total cache size after purge 171570811
+TOTAL_LINES=2369
+=== error CS / Compilation lines (all) ===
+L194: Begin MonoManager ReloadAssembly
+L303: Begin MonoManager ReloadAssembly
+L928: error CS2001: Source file 'D:\NewOne\Client-Dice\Assets/Scripts/DiceMergeGame.cs' could not be found.
+L936: Finished compiling graph: 320 nodes, 3703 flattened edges (3399 ToBuild, 50 ToUse), maximum node priority 192
+L950: Reloading assemblies after forced synchronous recompile.
+L951: Begin MonoManager ReloadAssembly
+=== ScriptAssemblies recency ===
+  DiceDemo.M1.Editor.dll SIZE=13312 MTIME=2026-09-16T16:40:32.2455489+08:00
+  DiceDemo.M1.Editor.pdb SIZE=20564 MTIME=2026-09-16T16:40:32.2440374+08:00
+  DiceDemo.M1.Tests.dll SIZE=10240 MTIME=2026-09-16T16:40:32.2256996+08:00
+  DiceDemo.M1.Tests.pdb SIZE=19856 MTIME=2026-09-16T16:40:32.2241021+08:00
+  DiceDemo.Runtime.dll SIZE=44544 MTIME=2026-09-16T16:40:31.8533023+08:00
+  DiceDemo.Runtime.pdb SIZE=28968 MTIME=2026-09-16T16:40:31.8522810+08:00
+  FindReference2.Editor.dll SIZE=146944 MTIME=2026-09-16T16:37:57.0178135+08:00
+  FindReference2.Editor.pdb SIZE=73020 MTIME=2026-09-16T16:37:57.0166709+08:00
+  UnityTcp.CustomTool.dll SIZE=363008 MTIME=2026-09-16T16:34:05.7682638+08:00
+  UnityTcp.CustomTool.pdb SIZE=101552 MTIME=2026-09-16T16:34:05.7647548+08:00
+  UnityTcp.Editor.dll SIZE=1220608 MTIME=2026-09-16T16:34:04.8989394+08:00
+  UnityTcp.Editor.pdb SIZE=349304 MTIME=2026-09-16T16:34:04.7475809+08:00
+  tjgenerators.Editor.dll SIZE=757760 MTIME=2026-09-16T16:34:02.7948795+08:00
+  tjgenerators.Editor.pdb SIZE=275040 MTIME=2026-09-16T16:34:02.7898291+08:00
+  Cn.Tuanjie.Codely.Editor.dll SIZE=144384 MTIME=2026-09-16T16:34:02.4024961+08:00

@@ -1,0 +1,46 @@
+members:
+  data.tj3d  off=241 size=518837
+  RuntimeInitializeOnLoads.json  off=519078 size=154
+  ScriptingAssemblies.json  off=519232 size=2867
+  Resources/tuanjie_default_resources  off=522099 size=389936
+  boot.config  off=912035 size=158
+  Il2CppData/Metadata/global-metadata.dat  off=912193 size=1418878
+
+--- data.tj3d header ---
+first 64 hex : 556e69747946530000000008352e782e7800323032322e332e363274313400000000000007eab500000120000001e60000024300000000000000000000000000
+first 80 asc : UnityFS.....5.x.x.2022.3.62t14............ .......C.................0.....B.d...
+u32[0..7]    : 1953066581, 5457529, 134217728, 779628085, 808583288, 858665522, 1949447726, 13361
+has "UnityFS" : true
+has "TuanjieFS": false
+first byte    : 0x55  (bundle sig if 0x55="U")
+
+--- search 19 names INSIDE data.tj3d ---
+HIT  1  Die Border 1_阶段丙修复
+MISS 0  Die Border 2_阶段丙修复
+MISS 0  Die Border 3_阶段丙修复
+MISS 0  Die Border 4_阶段丙修复
+MISS 0  Die Border 5_阶段丙修复
+MISS 0  Die Border 6_阶段丙修复
+MISS 0  Die Border 7_阶段丙修复
+MISS 0  Die Border 8_阶段丙修复
+MISS 0  Die Border 9_阶段丙修复
+MISS 0  Die One Side 1_阶段丙修复
+MISS 0  Die One Side 2_阶段丙修复
+MISS 0  Die One Side 3_阶段丙修复
+MISS 0  Die One Side 4_阶段丙修复
+MISS 0  Die One Side 5_阶段丙修复
+MISS 0  Die One Side 6_阶段丙修复
+MISS 0  Die One Side 7_阶段丙修复
+MISS 0  Die One Side 8_阶段丙修复
+MISS 0  Die One Side 9_阶段丙修复
+MISS 0  Die Outline_阶段丙修复
+hits inside data.tj3d: 1/19
+probe 0  Die_Voxel_Borders
+probe 0  Die_Voxel_Outline_0
+probe 0  Die_Voxel_Planes_0
+probe 1  Die Border 1
+probe 1  Gamepads_Sprite_Atlas_01
+probe 0  Border_Texture_Mat_Base_Color
+probe 1  Splash Screen
+probe 0  SplashScreen
+probe 2  tuanjie_builtin_extra

@@ -1,0 +1,37 @@
+file size=250880 ; PE-magic=MZ ; hasBSJB(managed metadata)=true
+total strings(>=4)=2876
+
+=== AssemblyRef-ish / UnityEngine / System / *Module ===
+  160308  <Module>
+  160890  WeChatWASM
+  161978  System.Collections.Generic
+  165776  netstandard
+  169765  UnityEngine
+  173713  System.Threading
+  173804  UnityEngine.Networking
+  173827  UnityEngine.Profiling
+  173849  Unity.Profiling
+  174365  UnityEngine.Scripting
+  184651  UnityEngineInternal
+  184980  wx-runtime.dll
+  186109  System
+  187341  System.Globalization
+  187667  System.Reflection
+  193613  LitJson
+  197718  WeChatWASM.GameProtect.Monitor
+  198398  System.Diagnostics
+  198729  System.Runtime.InteropServices
+  198760  System.Runtime.CompilerServices
+  199501  System.Collections
+  209291  SystemInfoHost
+  209490  System.Text
+  210608  System.Security.Cryptography
+  249118  mscoree.dll
+
+=== engine-type-name hits ===
+  195889  ProfilerRecorder
+  196385  DownloadHandler
+  198198  MonoBehaviour
+  200811  GameObject
+  208021  UnityWebRequest
+  211124  JsonUtility
